@@ -8,12 +8,15 @@ MANUAL TESTS
     add here spec pdf
 
 Download env-check/priv-esc script / insert env setting output from local srv
+
+
     https://github.com/rebootuser/LinEnum
     https://github.com/PenturaLabs/Linux_Exploit_Suggester
     https://www.securitysift.com/download/linuxprivchecker.py
     https://github.com/mzet-/linux-exploit-suggester
     https://www.darknet.org.uk/2015/06/unix-privesc-check-unixlinux-user-privilege-escalation-scanner/
     http://pentestmonkey.net/tools/audit/unix-privesc-check
+    
     
 Windows Privilege Escalation
 
