@@ -1,6 +1,6 @@
-Linux Privilege Escalation-
+Linux priv-esc / shell escape
 
-- Test commands allowed / characters to determine what shell you're in and how its configured - and escape accordingly 
+# Test commands allowed / characters to determine what shell you're in and how its configured - and escape accordingly 
 
 # MANUAL TESTS ON TARGET MACHINE
     https://fireshellsecurity.team/restricted-linux-shell-escaping-techniques/
@@ -27,7 +27,7 @@ Linux Exploit Suggester; based on operating system release number
 
     
     
-Windows Privilege Escalation
+Windows priv-esc
 
     http://www.fuzzysecurity.com/tutorials/16.html
     https://toshellandback.com/2015/11/24/ms-priv-esc/
