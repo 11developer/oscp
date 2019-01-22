@@ -1,5 +1,6 @@
   
   
+#WEB
 # Step 1: Nmap basic scan
 
 Nmap -Pn -p- -vv <ip address>
@@ -12,7 +13,13 @@ Nmap -Pn -sV -O -pT:{TCP ports found in step 1},U:{UDP ports found in step 1} -s
 
 Grab banners manually for more clarity: nc -nv <ip-address> <port>
   
+# Step 2.1: Subdomains check 
+knock 
+massscan 
+sublist3r
  
+check for default or customized dirs for each sub  
+  
 # Step 3: Any web dirs/sensitive data on web/domains?:
 
 Nikto -port {web ports} -host <ip address> -o <output file.txt>
