@@ -1,4 +1,4 @@
-Linux priv-esc / shell escape
+Linux/win priv-esc / shell escape
 
 # Test commands allowed / characters to determine what shell you're in and how its configured - and escape accordingly 
 
