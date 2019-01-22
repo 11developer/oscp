@@ -29,6 +29,9 @@ Linux Exploit Suggester; based on operating system release number
     
 # Windows priv-esc
 
+https://github.com/codingo/OSCP-2/blob/master/Windows/WinPrivCheck.bat
+Comprehensive Windows privesc script that checks KBs as well as common misconfigurations
+
     http://www.fuzzysecurity.com/tutorials/16.html
     https://toshellandback.com/2015/11/24/ms-priv-esc/
     https://github.com/foxglovesec/RottenPotato
