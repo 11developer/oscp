@@ -13,7 +13,7 @@ Buffer Overflows
 
 
 
-
+https://www.sans.org/reading-room/whitepapers/threats/paper/481
 
 
 
