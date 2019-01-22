@@ -7,7 +7,7 @@ BASH
 NETCAT
 TELNET
 
-
+https://resources.infosecinstitute.com/icmp-reverse-shell/#gref
 
     https://highon.coffee/blog/reverse-shell-cheat-sheet/
     http://pentestmonkey.net/tools/web-shells/php-reverse-shell
