@@ -1,14 +1,10 @@
 # subdomains
-massdns
-sublist3r
-knock
+massdns / sublist3r / knock
 
--dirs
-dirb
-fuzz payloads
-https://github.com/danielmiessler/SecLists 
+# dirs
+dirb / https://github.com/danielmiessler/SecLists 
 
--ports/services
+# ports/services
 nmap 
  https://nmap.org/nsedoc/
  https://github.com/MattBurmanTyco/OSCP-nmap-scripts
