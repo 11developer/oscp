@@ -8,7 +8,7 @@ Linux priv-esc / shell escape
     add here spec pdf
 
 
-# RUN ON TARGET 
+# RUN ON LINUX TARGET 
 
 https://github.com/codingo/OSCP-2/blob/master/BASH/CronJobChecker.sh
 Cron job checker script that may reveal root cron jobs by checking for newly spawned processes
@@ -27,7 +27,7 @@ Linux Exploit Suggester; based on operating system release number
 
     
     
-Windows priv-esc
+# Windows priv-esc
 
     http://www.fuzzysecurity.com/tutorials/16.html
     https://toshellandback.com/2015/11/24/ms-priv-esc/
