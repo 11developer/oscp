@@ -6,23 +6,26 @@ Nmap -Pn -p- -vv <ip address>
 
 Nmap -Pn -p- -sU -vv <ip address>
 
-# Step 2: Nmap version and vulnerability Scan:
+# Step 2: Nmap version and vulnerability Scan: >> https://nmap.org/nsedoc/
 
 Nmap -Pn -sV -O -pT:{TCP ports found in step 1},U:{UDP ports found in step 1} -script *vuln* <ip address>
 
 Grab banners manually for more clarity: nc -nv <ip-address> <port>
-
-# Step 3: Any web port(s) for further enumeration?
+  
+ 
+# Step 3: Any web dirs/sensitive data on web/domains?:
 
 Nikto -port {web ports} -host <ip address> -o <output file.txt>
 
 Dirb http{s}://<ip address>:<port> /usr/share/wordlist/dirb/{common/small/vulns}.txt
 
 Gobuster -u http://<ip-address> -w /usr/share/Seclists/Discovery/Web_Content/common.txt
+  
+if no dirs/contect found - test for customized dirs based on target name, clues - etc.
 
 /usr/share/secLists/Discovery folder has some great word lists
 
-If only web port visible try a bigger list in dirb: /usr/share/wordlist/dirb/big.txt
+If no web dirs visible try a bigger list in dirb: /usr/share/wordlist/dirb/big.txt
 
 Use Burpsuite as needed
 
@@ -34,17 +37,15 @@ Do you see any LFI/RFI vulnerability posted by Nikto? Try fimap: fimap -u <ip-ad
 
 Searchsploit <service name>
 
-http://www.securityfocus.com/vulnerabilities
 
-Copy exploit to local dir: searchsploit -m <ID>
-
-# Step 5: Manual Poking for Web Pages
+# Step 5: Manual tests for Web Pages
 
 Check the Page Source, Inspect elements, view cookies, tamper data, use curl/wget
 
     Google alien terms!
     Anything sensitive there?
     Any version info?
+    Headers?
 
 Search repository online (like GitHub) if the application used is open source: this may assist in site enumeration and guessing versions etc.!
 
@@ -62,7 +63,9 @@ Check for Input Validation in forms (like: 1′ or 1=1 limit 1;#   AND   1′ or
         Used to find command execution vulnerabilities.
     ../
         Directory Traversal Vulnerabilities.
+                                     
 
+#NETWORK
 # Step 6: Are there any NETBIOS, SMB, RPC ports discovered from Step 1?
 
 enum4linux -a <ip address>
