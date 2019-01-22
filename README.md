@@ -1,10 +1,10 @@
 ## :hearts: My OSCP-prep collection :hearts:
 
-[Kali commands](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Kali-Env)
+[Kali tricks](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Kali-Env)
  
-[BufferOverflows-Training+write-ups](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/BOF/BOF-practice.txt)
+[Buffer](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/BOF/BOF-practice.txt)
 
-[Recon tools & Google-hacking](https://github.com/Eva-Prokofiev/OSCP-prep/tree/master/Recon)
+[Recon methodology](https://github.com/Eva-Prokofiev/OSCP-prep/tree/master/Recon)
 
 [Web app testing](https://github.com/Eva-Prokofiev/OSCP-prep/tree/master/Web-app%20testing)
 
@@ -14,9 +14,9 @@
 
 [Collection of Backdoors / Web Shells](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Backdoors-Web%20Shells.txt)
 
-[Linux&Windows priv esc guides](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Priv%20Esc%20Linux%20%2B%20Windows.txt)
+[Linux&Win priv esc -shell escape](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Priv%20Esc%20Linux%20%2B%20Windows.txt)
 
-[File Transfer techniques](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/File%20Transfer.txt)
+[File Transfer](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/File%20Transfer.txt)
 
 [Other](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Dedicated-exploitation-frameworks.txt)
 
