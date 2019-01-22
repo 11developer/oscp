@@ -6,13 +6,13 @@ Nmap -Pn -p- -vv <ip address>
 
 Nmap -Pn -p- -sU -vv <ip address>
 
-Step 2: Nmap version and vulnerability Scan:
+# Step 2: Nmap version and vulnerability Scan:
 
 Nmap -Pn -sV -O -pT:{TCP ports found in step 1},U:{UDP ports found in step 1} -script *vuln* <ip address>
 
 Grab banners manually for more clarity: nc -nv <ip-address> <port>
 
-Step 3: Any web port(s) for further enumeration?
+# Step 3: Any web port(s) for further enumeration?
 
 Nikto -port {web ports} -host <ip address> -o <output file.txt>
 
@@ -30,7 +30,7 @@ Do you see any interesting directory containing sensitive data?
 
 Do you see any LFI/RFI vulnerability posted by Nikto? Try fimap: fimap -u <ip-address>
 
-Step 4: Are there any exploits available publicly from the services discovered from Step 2?
+# Step 4: Are there any exploits available publicly from the services discovered from Step 2?
 
 Searchsploit <service name>
 
@@ -38,7 +38,7 @@ http://www.securityfocus.com/vulnerabilities
 
 Copy exploit to local dir: searchsploit -m <ID>
 
-Step 5: Manual Poking for Web Pages
+# Step 5: Manual Poking for Web Pages
 
 Check the Page Source, Inspect elements, view cookies, tamper data, use curl/wget
 
@@ -63,7 +63,7 @@ Check for Input Validation in forms (like: 1′ or 1=1 limit 1;#   AND   1′ or
     ../
         Directory Traversal Vulnerabilities.
 
-Step 6: Are there any NETBIOS, SMB, RPC ports discovered from Step 1?
+# Step 6: Are there any NETBIOS, SMB, RPC ports discovered from Step 1?
 
 enum4linux -a <ip address>
 
@@ -93,7 +93,7 @@ Net view \\<ip-address>
 
 Check NMAP Scripts for SMB, DCERPC and NETBIOS
 
-Step 7: Any SMTP ports available?
+# Step 7: Any SMTP ports available?
 
 Enumerate Users:
 
@@ -103,7 +103,7 @@ Mail Server Testing
         VRFY username (verifies if username exists – enumeration of accounts)
         EXPN username (verifies if username is valid – enumeration of accounts)
 
-Step 8: How about SNMP ports?
+# Step 8: How about SNMP ports?
 
 Default Community Names: public, private, cisco, manager
 
@@ -133,7 +133,7 @@ Eg: enumerating running processes:
 
 root@kali:~# snmpwalk -c public -v1 192.168.11.204 1.3.6.1.2.1.25.4.2.1.2
 
-Step 9: FTP Ports Discovered
+# Step 9: FTP Ports Discovered
 
 Is anonymous login allowed?
 
@@ -141,7 +141,7 @@ If yes, is directory listing possible? Can a file be ‘get’ or ‘send’?
 
 Use browser: ftp://<ip-address> , What do you find?
 
-Step 10: Password Cracking / Brute Forcing
+# Step 10: Password Cracking / Brute Forcing
 
 Try this as the last resort or in case the Passwd/Shadow/SAM files are in possession:
 
@@ -163,7 +163,7 @@ For WordPress MD5 with salt: hashcat -m 400 -a 0 <hash file> <wordlist file>
 
 Sample Password list: /usr/share/wordlist/rockyou.txt
 
-Step 11: Packet Sniffing
+# Step 11: Packet Sniffing
 
 Use Wireshark / tcpdump to capture traffic on the target host:
 
