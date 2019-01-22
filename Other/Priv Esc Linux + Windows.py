@@ -2,13 +2,13 @@ Linux Privilege Escalation-
 
 - Test commands allowed / characters to determine what shell you're in and how its configured - and escape accordingly 
 
-MANUAL TESTS
+# MANUAL TESTS ON TARGET MACHINE
     https://fireshellsecurity.team/restricted-linux-shell-escaping-techniques/
     https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
     add here spec pdf
 
 
-# Download env-check/priv-esc script / insert env setting output from local srv
+# RUN ON TARGET 
 
 https://github.com/codingo/OSCP-2/blob/master/BASH/CronJobChecker.sh
 Cron job checker script that may reveal root cron jobs by checking for newly spawned processes
