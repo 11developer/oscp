@@ -1,15 +1,9 @@
-Subdomains:
-==========
-active:
+-subdomains
 massdns
 sublist3r
 knock
-passive:
-trough the tool sources (VT/SE)
-google dorks- for "site:*.target.com -site:www.target.com" 
 
-Dirs:
-====
+#-dirs# 
 dirb
 Fuzzing Payloads
 https://github.com/fuzzdb-project/fuzzdb
