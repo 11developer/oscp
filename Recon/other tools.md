@@ -1,4 +1,4 @@
--subdomains
+# subdomains
 massdns
 sublist3r
 knock
