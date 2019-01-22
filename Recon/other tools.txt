@@ -3,23 +3,17 @@ massdns
 sublist3r
 knock
 
-#-dirs# 
+-dirs
 dirb
-Fuzzing Payloads
-https://github.com/fuzzdb-project/fuzzdb
+fuzz payloads
 https://github.com/danielmiessler/SecLists 
-Or > custom based on info gathered 
-+ Use different fuzzers for dir scan > might reveral different results 
-Scan each sub (diff tech / app/ infra)
 
-nikto (main+subs) / proxy 
-
-Port
+-ports/services
 nmap 
  https://nmap.org/nsedoc/
- -sn | A | Pn | T(x) | C | sU (UDP)
+ -sn | A | Pn | T(4) | C | sU (UDP) 
 masscan
 
-
-Vanquish - https://github.com/frizb/Vanquish 
+semi-auto tools
+https://github.com/frizb/Vanquish 
 
