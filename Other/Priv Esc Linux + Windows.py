@@ -7,15 +7,24 @@ MANUAL TESTS
     https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
     add here spec pdf
 
-Download env-check/priv-esc script / insert env setting output from local srv
 
+# Download env-check/priv-esc script / insert env setting output from local srv
 
-    https://github.com/rebootuser/LinEnum
-    https://github.com/PenturaLabs/Linux_Exploit_Suggester
-    https://www.securitysift.com/download/linuxprivchecker.py
-    https://github.com/mzet-/linux-exploit-suggester
-    https://www.darknet.org.uk/2015/06/unix-privesc-check-unixlinux-user-privilege-escalation-scanner/
-    http://pentestmonkey.net/tools/audit/unix-privesc-check
+https://github.com/codingo/OSCP-2/blob/master/BASH/CronJobChecker.sh
+Cron job checker script that may reveal root cron jobs by checking for newly spawned processes
+
+https://github.com/rebootuser/LinEnum
+or
+http://pentestmonkey.net/tools/audit/unix-privesc-check
+or
+https://www.darknet.org.uk/2015/06/unix-privesc-check-unixlinux-user-privilege-escalation-scanner/
+Scripted Local Linux Enumeration & Privilege Escalation Checks 
+
+https://github.com/PenturaLabs/Linux_Exploit_Suggester
+or
+https://github.com/mzet-/linux-exploit-suggester
+Linux Exploit Suggester; based on operating system release number 
+
     
     
 Windows Privilege Escalation
