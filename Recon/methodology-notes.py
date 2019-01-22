@@ -45,7 +45,7 @@ Do you see any LFI/RFI vulnerability posted by Nikto? Try fimap: fimap -u <ip-ad
 Searchsploit <service name>
 
 
-# Step 5: Manual tests for Web Pages
+# Step 5: Manual tests for Web pages/app
 
 Check the Page Source, Inspect elements, view cookies, tamper data, use curl/wget
 
@@ -53,8 +53,9 @@ Check the Page Source, Inspect elements, view cookies, tamper data, use curl/wge
     Anything sensitive there?
     Any version info?
     Headers?
+    Dirs or syntax crawlers cannot catch?
 
-Search repository online (like GitHub) if the application used is open source: this may assist in site enumeration and guessing versions etc.!
+Search object online (like GitHub) if the application used is open source: this may assist in site enumeration and guessing versions etc.!
 
 Check HTTP Options
 
@@ -69,7 +70,12 @@ Check for Input Validation in forms (like: 1′ or 1=1 limit 1;#   AND   1′ or
     ‘ , &, ! , ¦ , < , >
         Used to find command execution vulnerabilities.
     ../
-        Directory Traversal Vulnerabilities.
+        Directory Traversal Vulnerabilities. 
+                                     
+       Check network during page load > any additional files / does it take source from remote addr / pull data / etc
+                                     
+                                     
+                                     
                                      
 
 #NETWORK
