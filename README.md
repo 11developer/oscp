@@ -10,7 +10,7 @@
 
 [Pass-cracking](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Pass-cracking.txt)
 
-[Cross-compiling](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Cross-compiling.txt)
+[Cross-compiling](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Cross-compiling.py)
 
 [Backdoors/Shells](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Backdoors-Web%20Shells.py)
 
