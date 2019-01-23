@@ -6,8 +6,6 @@
 
 [Recon methodology](https://github.com/Eva-Prokofiev/OSCP-prep/tree/master/Recon)
 
-[Web app exploitation](https://github.com/Eva-Prokofiev/OSCP-prep/tree/master/Web-app%20testing)
-
 [Cross-compiling](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Cross-compiling.py)
 
 [Backdoors/Shells](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Backdoors-Web%20Shells.py)
