@@ -22,7 +22,7 @@
 
 [Pivoting guides](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Pivoting.txt)
 
-[Exam tips](https://github.com/Eva-Prokofiev/OSCP-prep/tree/master/Exam-Tips)
+[Exam tips](https://github.com/Eva-Prokofiev/OSCP-prep/tree/master/Exam-Tips/mine.py)
 
 [Practice & Write-ups](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Vulnhub-HTB/Vulnhub-HTB.txt)
 
