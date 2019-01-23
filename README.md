@@ -1,20 +1,20 @@
 ## :hearts: My OSCP-prep collection :hearts:
 
-[Kali tricks](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Kali-Env)
+[Kali commands](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Kali-Env)
  
 [Buffer](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/BOF/BOF-practice.txt)
 
 [Recon methodology](https://github.com/Eva-Prokofiev/OSCP-prep/tree/master/Recon)
 
-[Web app testing](https://github.com/Eva-Prokofiev/OSCP-prep/tree/master/Web-app%20testing)
+[Web app exploitation](https://github.com/Eva-Prokofiev/OSCP-prep/tree/master/Web-app%20testing)
 
 [Pass-cracking](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Pass-cracking.txt)
 
-[Cross-compiling exploits](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Cross-compiling.txt)
+[Cross-compiling](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Cross-compiling.txt)
 
-[Collection of Backdoors / Web Shells](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Backdoors-Web%20Shells.txt)
+[Backdoors/Shells](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Backdoors-Web%20Shells.txt)
 
-[Linux&Win priv esc -shell escape](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Priv%20Esc%20Linux%20%2B%20Windows.txt)
+[Linux/Win priv esc-shell escape](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Priv%20Esc%20Linux%20%2B%20Windows.txt)
 
 [File Transfer](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/File%20Transfer.txt)
 
