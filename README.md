@@ -24,5 +24,5 @@
 
 [Exam tips](https://github.com/Eva-Prokofiev/OSCP-prep/tree/master/Exam-Tips)
 
-[Vulnhub-HTB & Writeups](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Vulnhub-HTB/Vulnhub-HTB.txt)
+[Practice & Write-ups](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Vulnhub-HTB/Vulnhub-HTB.txt)
 
