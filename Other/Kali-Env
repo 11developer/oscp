@@ -5,23 +5,23 @@ https://vim.rtorr.com/
 Set the Target IP Address to the $ip system variable
 export ip=192.168.1.100
 
-Find the location of a file
+Find location of file
 locate sbd.exe
 
-Search through directories in the $PATH environment variable
+Search through dirs in the $PATH environment variable
 which sbd
 
 Find a search for a file that contains a specific string in it’s name:
 find / -name sbd\*
 
 Show active internet connections
-netstat -lntp
+netstat -a
 
 Change Password
 passwd
 
 Verify a service is running and listening
-netstat -antp |grep apache
+netstat -antp |grep <servicename>
 
 Start a service
 systemctl start ssh
@@ -54,7 +54,7 @@ String manipulation
     Count number of lines in file
     wc -l index.html
 
-    Get the start or end of a file
+    Get the start or end ohead f a file
     head index.html
 
     tail index.html
