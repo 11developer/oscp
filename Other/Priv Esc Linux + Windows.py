@@ -2,7 +2,7 @@ Linux/win priv-esc / shell escape
 
 # Test commands allowed / characters to determine what shell you're in and how its configured - and escape accordingly 
 
-# MANUAL TESTS ON TARGET MACHINE
+# MANUAL TESTS ON TARGET MACHINE (LINUX)
     https://fireshellsecurity.team/restricted-linux-shell-escaping-techniques/
     https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
     add here spec pdf
@@ -27,14 +27,18 @@ Linux Exploit Suggester; based on operating system release number
 
     
     
-# WIN TESTS
+# WINDOWS TESTS
 
 https://github.com/codingo/OSCP-2/blob/master/Windows/WinPrivCheck.bat
 Comprehensive Windows privesc script that checks KBs as well as common misconfigurations
+        
+https://github.com/foxglovesec/RottenPotato
+Local Privilege Escalation from Windows Service Accounts to SYSTEM
 
-    http://www.fuzzysecurity.com/tutorials/16.html
-    https://toshellandback.com/2015/11/24/ms-priv-esc/
-    https://github.com/foxglovesec/RottenPotato
-    https://github.com/PowerShellMafia/PowerSploit
-    https://pentest.blog/windows-privilege-escalation-methods-for-pentesters/
+https://github.com/PowerShellMafia/PowerSploit
+PowerSploit - A PowerShell Post-Exploitation Framework
+
+#Other nice write-ups for windows priv-esc 
+https://toshellandback.com/2015/11/24/ms-priv-esc/
+https://pentest.blog/windows-privilege-escalation-methods-for-pentesters/
     
