@@ -1,23 +1,20 @@
-  
-  
 #WEB
 # Step 1: Nmap basic scan
 
 Nmap -Pn -p- -vv <ip address>
-
 UDP SCAN
 Nmap -Pn -p- -sU -vv <ip address>
 
-# Step 2: Nmap version and vulnerability Scan: >> https://nmap.org/nsedoc/
+# Step 2: Nmap version and vulnerability Scan: >> https://nmap.org/nsedoc/ -- scripts
 
 Nmap -Pn -sV -O -pT:{TCP ports found in step 1},U:{UDP ports found in step 1} -script *vuln* <ip address>
 
 Grab banners manually for more clarity: nc -nv <ip-address> <port>
   
 # Step 2.1: Subdomains check 
-knock 
+knock # python knockpy.py target.com
 massscan 
-sublist3r
+sublist3r # python3 sublist3r.py -v -d target.com
  
 check for default or customized dirs for each sub  
   
