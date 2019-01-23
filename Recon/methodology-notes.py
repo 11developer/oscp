@@ -5,6 +5,7 @@
 
 Nmap -Pn -p- -vv <ip address>
 
+UDP SCAN
 Nmap -Pn -p- -sU -vv <ip address>
 
 # Step 2: Nmap version and vulnerability Scan: >> https://nmap.org/nsedoc/
