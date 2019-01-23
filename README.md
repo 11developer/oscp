@@ -2,7 +2,7 @@
 
 [Kali commands](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Kali-Env)
  
-[Buffer](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/BOF/BOF-practice.txt)
+[Buffer](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/BOF/BOF-practice.py)
 
 [Recon methodology](https://github.com/Eva-Prokofiev/OSCP-prep/tree/master/Recon)
 
