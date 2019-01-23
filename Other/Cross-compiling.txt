@@ -1,3 +1,0 @@
-Cross-Compilation [exloits]
-
-    https://arrayfire.com/cross-compile-to-windows-from-linux/
