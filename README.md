@@ -12,7 +12,7 @@
 
 [Cross-compiling](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Cross-compiling.txt)
 
-[Backdoors/Shells](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Backdoors-Web%20Shells.txt)
+[Backdoors/Shells](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Backdoors-Web%20Shells.py)
 
 [Linux/Win priv esc-shell escape](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Priv%20Esc%20Linux%20%2B%20Windows.py)
 
