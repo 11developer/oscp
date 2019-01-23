@@ -1,6 +1,4 @@
-
-
-Training/Classes/Video
+#Training/Classes/Videos
 
 https://exploit-exercises.com
 https://www.cybrary.it/cyber-security/
