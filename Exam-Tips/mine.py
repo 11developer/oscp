@@ -2,14 +2,14 @@ If you're stuck in the lab/exam unable to run exloit, find vuln.. etc.
 Look for the product name with association to vulnhub or Hackthebox 
 > sometimes these are 1:1 as the lab practice for example apache + postfix + vulnhub > google result shows dedicated write up for this exact match.
 
-Reconnaisance tips:
+Recon tips:
 If a specific web app doesn't seem to have any directories exposed - 
 try to test the name of the domain/subdomain as a potential directory.
 OR
 CMS name/ forum name/ users / other indicators. 
 e.g. > target.e231.com/e231 or  target.e231.com/target
 
-Viewing L***.txt or P***.txt 
+Viewing target files
 If  can't open or view 
 try cat -A 
 try with vim 
