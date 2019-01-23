@@ -15,10 +15,8 @@ Grab banners manually for more clarity: nc -nv <ip-address> <port>
 knock # python knockpy.py target.com
 massscan 
 sublist3r # python3 sublist3r.py -v -d target.com
- 
-check for default or customized dirs for each sub  
   
-# Step 3: Any web dirs/sensitive data on web/domains?:
+# Step 3: Any web dirs/sensitive data on subs/domain?:
 
 Nikto -port {web ports} -host <ip address> -o <output file.txt>
 
@@ -31,8 +29,10 @@ if no dirs/contect found - test for customized dirs based on target name, clues 
 /usr/share/secLists/Discovery folder has some great word lists
 
 If no web dirs visible try a bigger list in dirb: /usr/share/wordlist/dirb/big.txt
+  
+if no dirs then check for customized dirs for each sub based on target keywords, info
 
-Use Burpsuite as needed
+Use Burpsuite if needed
 
 Do you see any interesting directory containing sensitive data?
 
@@ -41,7 +41,6 @@ Do you see any LFI/RFI vulnerability posted by Nikto? Try fimap: fimap -u <ip-ad
 # Step 4: Are there any exploits available publicly from the services discovered from Step 2?
 
 Searchsploit <service name>
-
 
 # Step 5: Manual tests for Web pages/app
 
