@@ -1,4 +1,4 @@
-## My OSCP-prep collection :hearts:
+##  _My OSCP-prep collection
 
 [Kali commands](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Kali-Env)
  
