@@ -1,11 +1,4 @@
-Web Shells
-
-PHP
-PERL
-PYTHON
-BASH
-NETCAT
-TELNET
+#Shells 
 
 https://resources.infosecinstitute.com/icmp-reverse-shell/#gref
 
