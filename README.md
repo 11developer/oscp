@@ -8,9 +8,9 @@
 
 [Backdoors/Shells](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Backdoors-Web%20Shells.py)
 
-[privesc-linux](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/linux-privesc.py)
+[privesc-linux](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/linux-privesc.py)
 
-[privesc-windows](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/win-privesc.py)
+[privesc-windows](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/win-privesc.py)
 
 [Cross-compiling](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Cross-compiling.py)
 
