@@ -4,7 +4,7 @@
  
 [Buffer](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/BOF/BOF-practice.py)
 
-[Recon methodology](https://github.com/Eva-Prokofiev/OSCP-prep/tree/master/Recon)
+[methodology](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/methodology-notes.py)
 
 [Cross-compiling](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Cross-compiling.py)
 
