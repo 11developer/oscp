@@ -2,7 +2,7 @@
 
 [exam tips](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/exam-tips.py)
 
-[Kali commands](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Kali-Env)
+[kali commands](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Kali-Env)
  
 [scanning/enum](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/methodology-notes.py)
 
