@@ -12,6 +12,8 @@
 
 [privesc-windows](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/win-privesc.py)
 
+[post-exploitation(linux+win)](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/post-exploitation.py)
+
 [cross-compiling](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Cross-compiling.py)
 
 [file transfer](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/File%20Transfer.txt)
