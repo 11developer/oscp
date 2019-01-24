@@ -23,3 +23,10 @@
 [Practice & Write-ups](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Vulnhub-HTB/Vulnhub-HTB.py)
 
 
+
+[ ] Scanning
+[ ] Enumeration
+[ ] Exploitation
+[ ] Privilege Escalation
+[ ] Flags
+[ ] Post Exploitation
