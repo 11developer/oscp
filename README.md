@@ -4,7 +4,7 @@
 
 [Kali commands](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Kali-Env)
  
-[methodology](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/methodology-notes.py)
+[scanning/enum](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/methodology-notes.py)
 
 [Backdoors/Shells](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Backdoors-Web%20Shells.py)
 
