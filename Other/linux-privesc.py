@@ -8,7 +8,7 @@ use mysql;
 select sys_exec("whoami");
 select sys_eval('whoami');  
 
-# PHP and MySQL
+PHP and MySQL
 http://bernardodamele.blogspot.com/2009/01/command-execution-with-mysql-udf.html
 ===============
 1. Uname -a
