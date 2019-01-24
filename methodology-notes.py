@@ -1,4 +1,4 @@
-Great source for methodolohy (recon,enum,priv..etc) -22 jan 
+another great source for methodolohy (recon,enum,priv..etc) -22 jan 
 https://paper.dropbox.com/doc/OSCP-Methodology-EnVX7VSiNGZ2K2QxCZD7Q
 
 #WEB
