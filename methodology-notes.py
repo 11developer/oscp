@@ -1,3 +1,6 @@
+Great source for methodolohy (recon,enum,priv..etc) -22 jan 
+https://paper.dropbox.com/doc/OSCP-Methodology-EnVX7VSiNGZ2K2QxCZD7Q
+
 #WEB
 # Step 1: Nmap basic scan
 
