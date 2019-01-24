@@ -1,3 +1,4 @@
+THIS FILE IS ABOUT LINUX PRIV-ESC WITH DIFFERENT METHODS + JAILED SHELL ESCAPE METHODS
 Command | Description 
 ------------------
 find . -name "config.php"
