@@ -1,4 +1,5 @@
 Linux/win priv-esc / shell escape
+USE THIS also FOR PRIV-ESC https://paper.dropbox.com/doc/OSCP-Methodology-EnVX7VSiNGZ2K2QxCZD7Q 
 
 # Test commands allowed / characters to determine what shell you're in and how its configured - and escape accordingly 
 
