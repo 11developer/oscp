@@ -8,7 +8,7 @@
 
 [backdoors/shells](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Backdoors-Web%20Shells.py)
 
-[privesc-linux](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/linux-privesc.py)
+[privesc-linux(&& shell escape)](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/linux-privesc.py)
 
 [privesc-windows](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/win-privesc.py)
 
