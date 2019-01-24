@@ -1,27 +1,44 @@
+The below commands will list all .txt files to identify the flags. Used in several CTFs and useful for the OSCP challenge.
+WINDOWS
+
+(for /R ".\" %A in (*.txt) do echo %~fA %~zA) | findstr /v "echo
+
+LINUX 
+
+“ind . -type f -name "*.txt"
+====================================
 
 Vim cheat sheet 
 https://vim.rtorr.com/
+====================================
 
 Set the Target IP Address to the $ip system variable
 export ip=192.168.1.100
+====================================
 
 Find location of file
 locate sbd.exe
+====================================
 
 Search through dirs in the $PATH environment variable
 which sbd
+====================================
 
 Find a search for a file that contains a specific string in it’s name:
 find / -name sbd\*
+====================================
 
 Show active internet connections
 netstat -a
+====================================
 
 Change Password
 passwd
+====================================
 
 Verify a service is running and listening
 netstat -antp |grep <servicename>
+====================================
 
 Start a service
 systemctl start ssh
@@ -33,21 +50,26 @@ systemctl enable ssh
 
 Stop a service
 systemctl stop ssh
+====================================
 
 Unzip a gz file
 gunzip access.log.gz
 
 Unzip a tar.gz file
 tar -xzvf file.tar.gz
+====================================
 
 Search command history
 history | grep phrase_to_search_for
+====================================
 
 Download a webpage
 wget http://www.cisco.com
+====================================
 
 Open a webpage
 curl http://www.cisco.com ( -v)
+====================================
 
 String manipulation
 
@@ -73,6 +95,7 @@ String manipulation
 
     Collect all the IP Addresses from a log file and sort by frequency
     cat access.log | cut -d " " -f 1 | sort | uniq -c | sort -urn
+====================================
 
 Decoding using Kali
 
@@ -82,6 +105,7 @@ Decoding using Kali
 
     Decode Hexidecimal Encoded Values
     echo -n "46 4c 34 36 5f 33 3a 32 396472796 63637756 8656874" | xxd -r -ps
+====================================
 
 Netcat - Read and write TCP and UDP Packets
 
