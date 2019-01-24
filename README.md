@@ -18,15 +18,3 @@
 
 [Practice & Write-ups](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/practice-sources.py)
 
-
-[ ] Scanning
-
-[ ] Enumeration
-
-[ ] Exploitation
-
-[ ] Privilege Escalation
-
-[ ] Flags
-
-[ ] Post Exploitation
