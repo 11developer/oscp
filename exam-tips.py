@@ -25,6 +25,7 @@ nano <filename>
 gedit  (gnome's default editor)
 leafpad (lxde's default editor)
 kedit  (KDE's default editor)
+xdg-open <filename>
 
 if viewing doesnt work at all - download to local machine 
 
