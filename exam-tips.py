@@ -40,5 +40,3 @@ B: think of how what you enumerated > can you chain together to get a shell or s
 C: read the exploit you're using and see if it needs editing (based on target info)
 2. Realize when your going down a rabbit hole. (exploitation, priv esc...)
 3. Have a solid methodology for testing.
-
-Offsec won't make you reinvent the wheel so to speak. In other words you won't need super complicated exploits to get root. The type of exploits that work on these machines will make you think "why didn't I think of that sooner?" But at the same time, the answer isn't right in your face.
