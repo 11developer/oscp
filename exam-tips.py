@@ -14,9 +14,18 @@ e.g. > target.e231.com/e231 or  target.e231.com/target
 Viewing target files
 If  can't open or view 
 try cat -A 
-try with vim 
 head <filename>
 less <filename>
+
+try with editors
+vi <filename>
+vim <filename>
+emacs <filename>
+nano <filename>
+gedit  (gnome's default editor)
+leafpad (lxde's default editor)
+kedit  (KDE's default editor)
+
 if viewing doesnt work at all - download to local machine 
 
 
