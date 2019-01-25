@@ -1,189 +1,26 @@
-#Training/Classes/Videos
+# CTF / WARGAMES / OTHERS..
 
-https://exploit-exercises.com
-https://www.cybrary.it/cyber-security/
-http://www.irongeek.com/i.php?page=videos/aide-winter-2011
 https://lab.pentestit.ru/pentestlabs/3
 https://trailofbits.github.io/ctf/
-http://ctf.forgottensec.com/wiki/?title=Main_Page
 http://smashthestack.org/
-http://ctf.hcesperer.org/
-https://www.google.com/calendar/feeds/noge7b1rg2dg4a8kcm1k68vbjg@group.calendar.google.com/public/basic
-https://www.google.com/calendar/embed?src=pe2ikdbe6b841od6e26ato0asc@group.calendar.google.com&gsessionid=OK
-https://crypto.stanford.edu/cs155/
-https://www.offensive-security.com/metasploit-unleashed/
-http://www.irongeek.com/i.php?page=videos/metasploit-class
-http://www.securitytube.net/
-http://resources.infosecinstitute.com/
-https://www.cs.fsu.edu/~redwood/OffensiveSecurity/lectures.html
-https://www.youtube.com/watch?v=ANlROJNWtCs&list=PLM0IiVYClP2vC3A6Uz_ESV86kBVYei5qx
-https://www.youtube.com/watch?v=Sye3mu-EoTI
-https://www.youtube.com/watch?v=GPjcSxyIIUc
-https://www.youtube.com/watch?v=kPxavpgos2I
-https://www.youtube.com/watch?v=pnqcHU2qFiA
-http://www.securitytube.net/video/7640
-https://www.youtube.com/watch?v=y2zrEAwmdws
-http://www.securitytube.net/video/7735Vulnhub VMs
-https://shellterlabs.com/en/
-
-EnigmaGroup
-http://www.enigmagroup.org/
-Exploit Exercises
-http://exploit-exercises.com/
 Google Gruyere
 http://google-gruyere.appspot.com/
-Gh0st Lab
-http://www.gh0st.net/
 Hack This Site
 http://www.hackthissite.org/
 HackThis
 http://www.hackthis.co.uk/
-HackQuest
-http://www.hackquest.com/
-Hack.me
-https://hack.me
 Hacking-Lab
 https://www.hacking-lab.com
-Hacker Challenge
-http://www.dareyourmind.net/
 Hacker Test
 http://www.hackertest.net/
-hACME Game
-http://www.hacmegame.org/
 Hax.Tor
 http://hax.tor.hu/
 OverTheWire
 http://www.overthewire.org/wargames/
-pwn0
-https://pwn0.com/home.php
-RootContest
-http://rootcontest.com/
-Root Me
-http://www.root-me.org/?lang=en
-Security Treasure Hunt
-http://www.securitytreasurehunt.com/
-Smash The Stack
-http://www.smashthestack.org/
-TheBlackSheep and Erik
-http://www.bright-shadows.net/
-ThisIsLegal
-http://thisislegal.com/
-Try2Hack
-http://www.try2hack.nl/
-WabLab
-http://www.wablab.com/hackme
-XSS: Can You XSS This?
-http://canyouxssthis.com/HTMLSanitizer/
-XSS: ProgPHP
-http://xss.progphp.com/
-DigitalCorpora
-http://digitalcorpora.org/
-Digital Forensics Tool Testing Images
-http://dftt.sourceforge.net/
-DFRWS 2014 Forensics Rodeo
-http://www.cs.uno.edu/~golden/dfrws-2014-rodeo.html
-Linux LEO Supplemental Files
-http://linuxleo.com/
-volatility memory samples
-https://code.google.com/p/volatility/wiki/FAQ
-ISFCE Sample Practical Exercise
-http://www.isfce.com/sample-pe.htm
-ForGe Forensic test image generator
-https://github.com/hannuvisti/forge
-Network Forensics
-Wireshark Sample Captures
-http://wiki.wireshark.org/SampleCaptures
-Wireshark Network Analysis Book Supplements
-http://www.wiresharkbook.com/studyguide.html
-pcapr
-http://www.pcapr.net
-PacketLife Capture Collection
-http://packetlife.net/captures/
-DigitalCorpora Packet Dumps
-http://digitalcorpora.org/corpora/packet-dumps
-Evil Fingers PCAP Challenges
-https://www.evilfingers.com/repository/pcaps_challenge.php
-PCAPS Repository
-https://github.com/markofu/pcaps
-Chris Sanders Packet Captures
-http://chrissanders.org/packet-captures/
-Tcpreplay Sample Captures
-http://tcpreplay.appneta.com/wiki/captures.html
-Enron Email Dataset
-http://www.cs.cmu.edu/~enron/
-MAWI Working Group Traffic Archive
-http://mawi.wide.ad.jp/mawi/
-LBNL-FTP-PKT
-http://ee.lbl.gov/anonymized-traces.html/
-Malware Analysis
-Open Malware / Offensive Computing
-http://openmalware.org/
-Contagio
-http://contagiodump.blogspot.com/
-VX Heaven
-http://vxheaven.org/
-VirusShare.com / VXShare
-http://virusshare.com/
-VXVault
-http://vxvault.siri-urz.net
-MalShare
-http://malshare.com/
-Virusign
-http://www.virusign.com/
-theZoo / Malware DB
-http://ytisf.github.io/theZoo/
-malc0de
-http://malc0de.com/database/
-FakeAVs blog
-http://www.fakeavs.com/
-malware_traffic
-http://malware-traffic-analysis.net/
-Georgia Tech malrec page
-http://panda.gtisc.gatech.edu/malrec/
-Kernelmode Forum
-http://www.kernelmode.info
-Malware Hub Forum
-http://malwaretips.com/categories/malware-hub.103/
-MalwareBlacklist.com
-http://www.malwareblacklist.com
-Joxean Koret’s List
-http://malwareurls.joxeankoret.com
-Sucuri Research Labs
-http://labs.sucuri.net/?malware
-CLEAN MX realtime database
-http://support.clean-mx.de/clean-mx/viruses.php
-Contagio Mobile Malware
-http://contagiominidump.blogspot.com/
-Android Sandbox
-http://androidsandbox.net/samples/
-maltrieve
-http://maltrieve.org/
-HoneyDrive
-http://bruteforce.gr/honeydrive
-Online and CTFs
-Honeynet Challenges
-https://www.honeynet.org/challenges
-http://old.honeynet.org/scans/index.html
-I Smell Packets
-http://ismellpackets.com/
-Network Forensics Puzzle contest
-http://forensicscontest.com/puzzles
 DEF CON CTF Archive
 https://www.defcon.org/html/links/dc-ctf.html
-DFRWS
-http://www.dfrws.org/2013/challenge/index.shtml
-http://www.dfrws.org/2010/challenge/
-http://www.dfrws.org/2011/challenge/index.shtml
-http://www.dfrws.org/2007/challenge/index.shtml
-http://www.dfrws.org/2006/challenge/
-http://www.dfrws.org/2005/challenge/
-ForensicKB Practicals
-http://www.forensickb.com/2008/01/forensic-practical.html
-http://www.forensickb.
 
-A few Vulnhub VMs. I recommend trying out a few before the exam or when your lab time expires.
-
-Another good advice is to read/watch the walkthroughs of those machines. Try to root them yourself first!
+A few Vulnhub VMs that are lookalike the oscp machines
 
     Kioptrix: Level 1 (#1)
     Kioptrix: Level 1.1 (#2)
@@ -203,35 +40,21 @@ Another good advice is to read/watch the walkthroughs of those machines. Try to 
     SickOs: 1.2
     pWnOS: 2.0
 
-HackTheBox (HTB)
 
-HTB is a penetration testing platform with many machines that feel like they belong in the OSCP labs. All you have to do is pass the registration challenge and only then, you will have your VPN access provided. I suggest doing a few as it is free and an excellent way to prepare for the exam without downloading a vulnerable VM.
-Web Exploitation
-
-    http://www.studfiles.ru/preview/2083097/page:7/
-    http://126kr.com/article/3vbt0k8fxwh
-    http://meyerweb.com/eric/tools/dencoder/
-
-
-Other people's exp and journey to OSCP and some of my favorite 
+# Other people's exp and journey to OSCP and some of my favorite 
 
 https://medium.com/@hakluke/haklukes-ultimate-oscp-guide-part-1-is-oscp-for-you-b57cbcce7440?source=user_profile---------13------------------
 https://medium.com/@hakluke/haklukes-ultimate-oscp-guide-part-2-workflow-and-documentation-tips-9dd335204a48 
-
 https://medium.com/@cosmin.ciobanu/the-only-oscp-advice-you-will-need-ae141060b87c
-
 https://0x00sec.org/t/rains-pwk-oscp-write-up-and-ama/8164
-
 https://scriptdotsh.com/index.php/2018/04/17/31-days-of-oscp-experience/
-
 https://www.lewisecurity.com/i-am-finally-an-oscp/ 
-
 https://prasannakumar.in/infosec/my-walk-towards-cracking-oscp/ 
         
         
         
         
-        Buffer Overflows
+# Buffer Overflows
 
 #EIP OVERWRITE 
 http://www.primalsecurity.net/0x0-exploit-tutorial-buffer-overflow-vanilla-eip-overwrite-2/
