@@ -9,6 +9,8 @@ OR
 CMS name/ forum name/ users / other indicators. 
 e.g. > target.e231.com/e231 or  target.e231.com/target
 
+- make note of versions and footer of page for example.. 2012-2017 + on page CMS XYZ - 2017  -> varify version 
+
 Viewing target files
 If  can't open or view 
 try cat -A 
