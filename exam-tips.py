@@ -13,7 +13,8 @@ Viewing target files
 If  can't open or view 
 try cat -A 
 try with vim 
-head filename
+head <filename>
+less <filename>
 if viewing doesnt work at all - download to local machine 
 
 
