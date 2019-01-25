@@ -51,6 +51,8 @@ https://scriptdotsh.com/index.php/2018/04/17/31-days-of-oscp-experience/
 https://www.lewisecurity.com/i-am-finally-an-oscp/ 
 https://prasannakumar.in/infosec/my-walk-towards-cracking-oscp/ 
         
+# Watch all IPPSEC videos 
+https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA
         
         
         
