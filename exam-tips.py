@@ -11,6 +11,9 @@ e.g. > target.e231.com/e231 or  target.e231.com/target
 
 - make note of versions and footer of page for example.. 2012-2017 + on page CMS XYZ - 2017  -> varify version 
 
+# some machines have their own user restrictions.. so not always you will be able to view the flag.txt with just cat.. 
+here are some nice alternatives that worked for me during similar vulnhubs, ctf's.
+
 Viewing flag.txt files
 If  can't open or view 
 try cat -A 
