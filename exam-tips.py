@@ -11,13 +11,15 @@ e.g. > target.e231.com/e231 or  target.e231.com/target
 
 - make note of versions and footer of page for example.. 2012-2017 + on page CMS XYZ - 2017  -> varify version 
 
-Viewing target files
+Viewing flag.txt files
 If  can't open or view 
 try cat -A 
 head <filename>
 less <filename>
+tail -f <filename>
+more <filename>
 
-try with editors
+try open file with editors
 vi <filename>
 vim <filename>
 emacs <filename>
