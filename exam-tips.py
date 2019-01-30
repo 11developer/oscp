@@ -9,7 +9,10 @@ OR
 CMS name/ forum name/ users / other indicators. 
 e.g. > target.e231.com/e231 or  target.e231.com/target
 
-- make note of versions and footer of page for example.. 2012-2017 + on page CMS XYZ - 2017  -> varify version 
+- identifying versions 
+* from headers 
+* bottom page 
+* mouseoverview may reveal different version on object in web 
 
 # some machines have their own user restrictions.. so not always you will be able to view the flag.txt with just cat.. 
 here are some nice alternatives that worked for me during similar vulnhubs, ctf's.
