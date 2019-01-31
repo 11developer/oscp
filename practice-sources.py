@@ -1,5 +1,7 @@
 # CTF / WARGAMES / OTHERS..
 
+very nice for web app tests > https://www.hacksplaining.com/ 
+
 https://lab.pentestit.ru/pentestlabs/3
 https://trailofbits.github.io/ctf/
 http://smashthestack.org/
