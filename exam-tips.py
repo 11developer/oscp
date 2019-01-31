@@ -24,6 +24,7 @@ head <filename>
 less <filename>
 tail -f <filename>
 more <filename>
+type <filename>
 
 try open file with editors
 vi <filename>
