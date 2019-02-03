@@ -1,5 +1,4 @@
-# Some manual enumeration within files.
-
+# Environemnt / Versions
 what's the distribution type? What version?
 ~~~
 cat /etc/issue
