@@ -30,9 +30,9 @@ cat ~/.bash_logout
 env
 set
 ~~~
-~
+
 # Aplication & Services
-~~
+~~~
 What services are running? Which service has which user privilege?
 ps aux
 ps -ef
