@@ -1,17 +1,3 @@
-arrange by 
-
-manual
-
-kernel vuln
-
-sudo
-
-services as root
-
-editors
-
-other methods
-
 # Some manual enumeration within files.
 ~~~
 what's the distribution type? What version?
@@ -283,8 +269,8 @@ find / -name python*
 find / -name gcc*
 find / -name cc
 ~~~
+# How can files be uploaded?
 ~~~
-How can files be uploaded?
 find / -name wget
 find / -name nc*
 find / -name netcat*
@@ -292,7 +278,6 @@ find / -name tftp*
 find / -name ftp
 ~~~
 # Kernel vulnerability. (exploit suggester or manual based on version)
-~~
 ~~~
 1. Uname -a
 2. linux-exploit-suggester-2.pl -k <KERNEL_VERSION>
