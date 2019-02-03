@@ -1,13 +1,14 @@
 # Some manual enumeration within files.
-~~~
+
 what's the distribution type? What version?
+~~~
 cat /etc/issue
 cat /etc/*-release
 cat /etc/lsb-release      # Debian based
 cat /etc/redhat-release   # Redhat based
 ~~~
-~~~
 What can be learnt from the environmental variables?
+~~~
 cat /etc/profile
 cat /etc/bashrc
 cat ~/.bash_profile
