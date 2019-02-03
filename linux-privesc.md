@@ -1,3 +1,10 @@
+arrange by 
+manual
+kernel vuln
+sudo
+services as root
+other 
+
 # Kernel vulnerability. (exploit suggester or manual based on version)
 ~~~
 1. Uname -a
