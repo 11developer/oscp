@@ -3,6 +3,7 @@ manual
 kernel vuln
 sudo
 services as root
+editors
 other 
 
 # Kernel vulnerability. (exploit suggester or manual based on version)
