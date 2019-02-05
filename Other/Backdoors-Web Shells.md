@@ -1,11 +1,9 @@
-#Shells 
-
+# Shells 
 
 Set your Netcat listening shell on an allowed port
-
 Use a port that is likely allowed via outbound firewall rules on the target network, e.g. 80 / 443
 
-
+# src
 http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 https://resources.infosecinstitute.com/icmp-reverse-shell/#gref
 
