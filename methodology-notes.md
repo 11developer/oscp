@@ -3,52 +3,44 @@ https://paper.dropbox.com/doc/OSCP-Methodology-EnVX7VSiNGZ2K2QxCZD7Q
 
 # WEB
 # Step 1: Nmap basic scan
->
+~~~
+TCP SCAN 
 nmap -sC -sV -oA -ip-
-
 Nmap -Pn -p- -vv -ip-
 UDP SCAN
 Nmap -Pn -p- -sU -vv -ip-
-
-# Step 2: Nmap version and vulnerability Scan: >> https://nmap.org/nsedoc/ -- scripts
-
+~~~
+# Step 2: Nmap version and vulnerability Scan: 
+~~~
+https://nmap.org/nsedoc/ -- scripts
 Nmap -Pn -sV -O -pT:{TCP ports found in step 1},U:{UDP ports found in step 1} -script *vuln* <ip address>
-
 Grab banners manually for more clarity: nc -nv <ip-address> <port>
-  
+ ~~~ 
 # Step 2.1: Subdomains check 
+~~~
 knock # python knockpy.py target.com
 massscan 
 sublist3r # python3 sublist3r.py -v -d target.com
-  
+~~~
 # Step 3: Any web dirs/sensitive data on subs/domain?:
-
+~~~
 Nikto -port {web ports} -host <ip address> -o <output file.txt>
-
 Dirb http{s}://<ip address>:<port> /usr/share/wordlist/dirb/{common/small/vulns}.txt
-
 Gobuster -u http://<ip-address> -w /usr/share/Seclists/Discovery/Web_Content/common.txt
-  
 if no dirs/contect found - test for customized dirs based on target name, clues - etc.
-
 /usr/share/secLists/Discovery folder has some great word lists
-
 If no web dirs visible try a bigger list in dirb: /usr/share/wordlist/dirb/big.txt
-  
 if no dirs then check for customized dirs for each sub based on target keywords, info
-
 Use Burpsuite if needed
-
 Do you see any interesting directory containing sensitive data?
-
 Do you see any LFI/RFI vulnerability posted by Nikto? Try fimap: fimap -u <ip-address>
-
+~~~
 # Step 4: Are there any exploits available publicly from the services discovered from Step 2?
-
+~~~
 Searchsploit <service name>
-
+~~~
 # Step 5: Manual tests for Web pages/app
-
+~~~
 Check the Page Source, Inspect elements, view cookies, tamper data, use curl/wget
 
     Google alien terms!
@@ -75,7 +67,7 @@ Check for Input Validation in forms (like: 1′ or 1=1 limit 1;#   AND   1′ or
         Directory Traversal Vulnerabilities. 
                                      
        Check network during page load > any additional files / does it take source from remote addr / pull data / etc
-                                     
+~~~                                   
                                      
                                      
                                      
