@@ -1,14 +1,14 @@
-another great source for methodolohy (recon,enum,priv..etc) -22 jan 
+
 https://paper.dropbox.com/doc/OSCP-Methodology-EnVX7VSiNGZ2K2QxCZD7Q
 
-#WEB
+# WEB
 # Step 1: Nmap basic scan
+>
+nmap -sC -sV -oA -ip-
 
-nmap -sC -sV -oA <ip>
-
-Nmap -Pn -p- -vv <ip address>
+Nmap -Pn -p- -vv -ip-
 UDP SCAN
-Nmap -Pn -p- -sU -vv <ip address>
+Nmap -Pn -p- -sU -vv -ip-
 
 # Step 2: Nmap version and vulnerability Scan: >> https://nmap.org/nsedoc/ -- scripts
 
