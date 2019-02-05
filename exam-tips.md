@@ -15,20 +15,32 @@ e.g. > target.e231.com/e231 or  target.e231.com/target
 # viewing flag.txt 
 If  can't open or view 
 try cat -A 
+
 head <filename>
+  
 less <filename>
+  
 tail -f <filename>
+  
 more <filename>
+  
 type <filename>
 
 try open file with editors
 vi <filename>
+  
 vim <filename>
+  
 emacs <filename>
+  
 nano <filename>
+  
 gedit  (gnome's default editor)
+
 leafpad (lxde's default editor)
+
 kedit  (KDE's default editor)
+
 xdg-open <filename>
 
 if viewing doesnt work at all - download to local machine 
