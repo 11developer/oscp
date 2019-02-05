@@ -16,7 +16,7 @@ e.g. > target.e231.com/e231 or  target.e231.com/target
 If  can't open or view 
 try cat -A 
 
-head <filename>
+head -filename-
   
 less <filename>
   
