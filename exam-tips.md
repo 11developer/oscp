@@ -1,18 +1,18 @@
-Look for the product name with association to vulnhub or Hackthebox 
+# exploits
 > sometimes these are 1:1 as the lab practice for example apache + postfix + vulnhub > 
 google result shows dedicated write up for this exact match.
 
-no dirs?
+# dirs
 > test the name of the domain/sub/ other indicator as dir name
 e.g. > target.e231.com/e231 or  target.e231.com/target
 
-- identifying versions
+# identifying versions
 * besides scanner 
 * from headers 
 * bottom page 
 * mouseoverview may reveal different version on object in web 
 
-#Viewing flag.txt files
+# viewing flag.txt 
 If  can't open or view 
 try cat -A 
 head <filename>
@@ -33,7 +33,7 @@ xdg-open <filename>
 
 if viewing doesnt work at all - download to local machine 
 
-Exam tipsfrom reddit
+# Exam tipsfrom reddit
 
 1. Do the buffer overflow first
 A: enumerate more or google a way to enumerate the specific service differently
