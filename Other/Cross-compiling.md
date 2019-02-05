@@ -14,9 +14,9 @@ x86_64-w64-mingw32-g++ hello.cc -o hello64.exe   # 64-bit
 ~~~
 
 # Identifying if C code is for Windows or Linux
-
-C #includes will indicate which OS should be used to build the exploit.
-
+~~~
+C # includes will indicate which OS should be used to build the exploit.
+~~~
 Command & Description
 
 process.h, string.h, winbase.h, windows.h, winsock2.h
@@ -25,7 +25,7 @@ Description Windows exploit code
 
 arpa/inet.h, fcntl.h, netdb.h, netinet/in.h, 
  sys/sockt.h, sys/types.h, unistd.h
-
+~~~
 Linux exploit code
 Build Exploit GCC
 
@@ -46,7 +46,6 @@ Command & Description
 
 Cross compile 32 bit binary on 64 bit Linux
 
-____________________________________________________
 Compile Windows .exe on Linux
 
 Build / compile windows exploits on Linux, resulting in a .exe file.
