@@ -18,22 +18,22 @@ try cat -A
 
 head -filename-
   
-less <filename>
+less -filename-
   
-tail -f <filename>
+tail -f -filename-
   
-more <filename>
+more -filename-
   
-type <filename>
+type -filename-
 
 try open file with editors
-vi <filename>
+vi -filename-
   
-vim <filename>
+vim -filename-
   
-emacs <filename>
+emacs -filename-
   
-nano <filename>
+nano -filename-
   
 gedit  (gnome's default editor)
 
@@ -41,15 +41,7 @@ leafpad (lxde's default editor)
 
 kedit  (KDE's default editor)
 
-xdg-open <filename>
+xdg-open -filename-
 
 if viewing doesnt work at all - download to local machine 
 
-# Exam tipsfrom reddit
-
-1. Do the buffer overflow first
-A: enumerate more or google a way to enumerate the specific service differently
-B: think of how what you enumerated > can you chain together to get a shell or sensitive information (service_xyz vuln + service_ttt vuln = the specfic exploit that works 
-C: read the exploit you're using and see if it needs editing (based on target info)
-2. Realize when your going down a rabbit hole. (exploitation, priv esc...)
-3. Have a solid methodology for testing.
