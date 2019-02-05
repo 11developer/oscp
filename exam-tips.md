@@ -3,7 +3,7 @@ Look for the product name with association to vulnhub or Hackthebox
 google result shows dedicated write up for this exact match.
 
 no dirs?
-test the name of the domain/sub/ other indicator as dir name
+> test the name of the domain/sub/ other indicator as dir name
 e.g. > target.e231.com/e231 or  target.e231.com/target
 
 - identifying versions
