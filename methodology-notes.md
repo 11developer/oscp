@@ -24,8 +24,8 @@ sublist3r # python3 sublist3r.py -v -d target.com
 ~~~
 # Step 3: Any web dirs/sensitive data on subs/domain?:
 ~~~
-Nikto -port {web ports} -host <ip address> -o <output file.txt>
-Dirb http{s}://<ip address>:<port> /usr/share/wordlist/dirb/{common/small/vulns}.txt
+Nikto -port {web ports} -host ip address -o output file.txt
+Dirb http{s}://ip address:port /usr/share/wordlist/dirb/{common/small/vulns}.txt
 Gobuster -u http://<ip-address> -w /usr/share/Seclists/Discovery/Web_Content/common.txt
 if no dirs/contect found - test for customized dirs based on target name, clues - etc.
 /usr/share/secLists/Discovery folder has some great word lists
@@ -48,11 +48,11 @@ Check the Page Source, Inspect elements, view cookies, tamper data, use curl/wge
     Any version info?
     Headers?
     Dirs or syntax crawlers cannot catch?
-
+~~~
 Search object online (like GitHub) if the application used is open source: this may assist in site enumeration and guessing versions etc.!
 
-Check HTTP Options
-
+# part of step5 > Check HTTP Options
+~~~
 Check for Input Validation in forms (like: 1′ or 1=1 limit 1;#   AND   1′ or 1=1–)
 
     NULL or null
@@ -68,21 +68,20 @@ Check for Input Validation in forms (like: 1′ or 1=1 limit 1;#   AND   1′ or
                                      
        Check network during page load > any additional files / does it take source from remote addr / pull data / etc
 ~~~                                   
-                                     
-                                     
-                                     
-
-#NETWORK
+# NETWORK
                                      
 # Step 5.1:Semi auto recon + exploit suggest based on results - https://github.com/frizb/Vanquish                                      
 # Step 6: Are there any NETBIOS, SMB, RPC ports discovered from Step 1?
-
+~~~
 enum4linux -a <ip address>
-
+~~~
+~~~
 Rpcclient <ip address> -U “” -N
-
+~~~
+~~~
 Rpcinfo: What services are running? Rpcinfo -p <target ip>
-
+~~~
+~~~
 Is portmapper running? Is rlogin running? Or NFS or Mountd?
 
 http://etutorials.org/Networking/network+security+assessment/Chapter+12.+Assessing+Unix+RPC+Services/12.2+RPC+Service+Vulnerabilities/
@@ -116,7 +115,8 @@ Mail Server Testing
         EXPN username (verifies if username is valid – enumeration of accounts)
 
 # Step 8: How about SNMP ports?
-
+~~~
+~~~
 Default Community Names: public, private, cisco, manager
 
 Enumerate MIB:
@@ -144,16 +144,19 @@ Snmpwalk -c <community string> -v<version> <ip address>
 Eg: enumerating running processes:
 
 root@kali:~# snmpwalk -c public -v1 192.168.11.204 1.3.6.1.2.1.25.4.2.1.2
+~~~
 
 # Step 9: FTP Ports Discovered
-
+~~~
 Is anonymous login allowed?
 
 If yes, is directory listing possible? Can a file be ‘get’ or ‘send’?
 
 Use browser: ftp://<ip-address> , What do you find?
+~~~
 
 # Step 10: Password Cracking / Brute Forcing
+~~~
 
 Try this as the last resort or in case the Passwd/Shadow/SAM files are in possession:
 
@@ -174,9 +177,12 @@ Using hashcat for cracking hashes:
 For WordPress MD5 with salt: hashcat -m 400 -a 0 <hash file> <wordlist file>
 
 Sample Password list: /usr/share/wordlist/rockyou.txt
+~~~
 
 # Step 11: Packet Sniffing
+~~~
 
 Use Wireshark / tcpdump to capture traffic on the target host:
 
 “tcpdump -i tap0 host <target-ip> tcp port 80 and not arp and not icmp -vv”
+~~~
