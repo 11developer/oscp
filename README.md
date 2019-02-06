@@ -1,18 +1,18 @@
 ##  My OSCP-prep collection_
 
-[exam tips](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/exam-tips.py)
+[exam tips](https://github.com/ex16x41/OSCP-prep/blob/master/exam-tips.md)
 
 [kali commands](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Kali-Env)
  
-[scanning/enum](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/methodology-notes.py)
+[scanning/enum](https://github.com/ex16x41/OSCP-prep/blob/master/methodology-notes.md)
 
 [backdoors/shells](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Backdoors-Web%20Shells.py)
 
-[modifying exploits](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/modifying-exploits.md)
+[modifying exploits](https://github.com/ex16x41/OSCP-prep/blob/master/modifying-exploits.md)
 
-[privesc-linux(&& shell escape)](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/linux-privesc.py)
+[privesc-linux(&& shell escape)](https://github.com/ex16x41/OSCP-prep/blob/master/linux-privesc.md)
 
-[privesc-windows](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/win-privesc.py)
+[privesc-windows](https://github.com/ex16x41/OSCP-prep/blob/master/win-privesc.md)
 
 [post-exploitation(linux+win)](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/post-exploitation.py)
 
@@ -22,5 +22,5 @@
 
 [pivoting guides](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Pivoting.txt)
 
-[practice & write-ups](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/practice-sources.py)
+[practice & write-ups](https://github.com/ex16x41/OSCP-prep/blob/master/practice-sources)
 
