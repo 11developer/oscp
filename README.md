@@ -6,7 +6,7 @@
  
 [scanning/enum](https://github.com/ex16x41/OSCP-prep/blob/master/methodology-notes.md)
 
-[backdoors/shells](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Backdoors-Web%20Shells.py)
+[backdoors/shells](https://github.com/ex16x41/OSCP-prep/blob/master/Other/Backdoors-Web%20Shells.md)
 
 [modifying exploits](https://github.com/ex16x41/OSCP-prep/blob/master/modifying-exploits.md)
 
@@ -16,7 +16,7 @@
 
 [post-exploitation(linux+win)](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/post-exploitation.py)
 
-[cross-compiling](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/Cross-compiling.py)
+[cross-compiling](https://github.com/ex16x41/OSCP-prep/blob/master/Other/Cross-compiling.md)
 
 [file transfer](https://github.com/Eva-Prokofiev/OSCP-prep/blob/master/Other/File%20Transfer.txt)
 
