@@ -373,12 +373,12 @@ rpm -qa (CentOS / openSUSE )
  
 # OpenBSD, FreeBSD 
 pkg_info
-
+~~~
 # Check vulnerable software.
 Use searchsploit or exploitdb. Sometimes github has an exploit as well.
-======================
+~~~
 http://www.dankalia.com/tutor/01005/0100501004.htm 
-
+~~~
 # Is there a punctuation ‘.’ mark in the PATH. 
 ======================
 Check all home directories .ssh folders 
@@ -387,9 +387,10 @@ ls -la ~/.ssh/
 find / -name "id_dsa*" -o -name "id_rsa*" -o -name "known_hosts" -o -name "authorized_hosts" -o -name "authorized_keys" 2>/dev/null |xargs -r
 
 ls -la
-
+~~~
+~~~
 # Check for root SSH keys.
-=======================
+~~~
 ps aux | grep root 
  
 ps aux | awk '{print $11}'|xargs -r ls -la 2>/dev/null |awk '!x[$0]++'
@@ -399,7 +400,7 @@ ps aux | awk '{print $11}'|xargs -r ls -la 2>/dev/null |awk '!x[$0]++'
 # OTHER GUIDES TO CHECK > MANUAL TESTS OR FILE TRANSFER > RUN ENUM SCRIPT ON TARGET MACHINE 
 https://sushant747.gitbooks.io/total-oscp-guide/privilege_escalation_-_linux.html
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
-========================
+=======================
 
 # RUN ON LINUX TARGET 
 
@@ -417,7 +418,7 @@ https://github.com/PenturaLabs/Linux_Exploit_Suggester
 or
 https://github.com/mzet-/linux-exploit-suggester
 Linux Exploit Suggester; based on operating system release number 
-
+~~~
 
 
 # JAILED SHELLS
