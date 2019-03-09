@@ -420,7 +420,8 @@ Linux Exploit Suggester; based on operating system release number
 
 
 
-=================== JAILED SHELLS ############################
+# JAILED SHELLS
+
 SOURCE:
 https://fireshellsecurity.team/restricted-linux-shell-escaping-techniques/ 
 
