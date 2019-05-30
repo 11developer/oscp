@@ -52,9 +52,10 @@ Check the Page Source, Inspect elements, view cookies, tamper data, use curl/wge
 Search object online (like GitHub) if the application used is open source: this may assist in site enumeration and guessing versions etc.!
 
 # part of step5 > Check HTTP Options
-~~~
-Check for Input Validation in forms (like: 1′ or 1=1 limit 1;#   AND   1′ or 1=1–)
 
+# Check for Input Validation in forms 
+~~~
+(like: 1′ or 1=1 limit 1;#   AND   1′ or 1=1–)
     NULL or null
         Possible error messages returned.
     ‘ , ” , ; , <!
