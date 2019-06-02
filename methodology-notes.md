@@ -25,6 +25,9 @@ Grab banners manually for more clarity: nc -nv <ip-address> <port>
 knock # python knockpy.py target.com
 massscan 
 sublist3r # python3 sublist3r.py -v -d target.com
+
+alternative 
+https://github.com/OWASP/Amass/ 
 ~~~
 # Step 3: Any web dirs/sensitive data on subs/domain?:
 ~~~
