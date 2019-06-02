@@ -2,7 +2,7 @@
 https://paper.dropbox.com/doc/OSCP-Methodology-EnVX7VSiNGZ2K2QxCZD7Q
 
 # WEB
-# Step 1: Nmap basic scan
+# Step 1:Basic scan
 ~~~
 TCP SCAN 
 nmap -sC -sV -oA -ip-
@@ -16,6 +16,10 @@ https://nmap.org/nsedoc/ -- scripts
 Nmap -Pn -sV -O -pT:{TCP ports found in step 1},U:{UDP ports found in step 1} -script *vuln* <ip address>
 Grab banners manually for more clarity: nc -nv <ip-address> <port>
  ~~~ 
+# Automatic scanners + Vulnerability Assessments tools 
+- Kaboom https://github.com/Leviathan36/kaboom 
+- Trigmap https://4hou.win/wordpress/?p=32665 
+ 
 # Step 2.1: Subdomains check 
 ~~~
 knock # python knockpy.py target.com
