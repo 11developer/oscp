@@ -1,3 +1,6 @@
+# Privesc via automation 
+https://www.hackingarticles.in/window-privilege-escalation-via-automated-script/ 
+
 # Manual - enumeration - environment - settings..etc
 ~~~
 / What system are we connected to? 
