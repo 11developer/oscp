@@ -1,4 +1,4 @@
-edit full usage each 
+edit full usage each  https://0x00sec.org/t/the-ultimate-privilege-escalation-reference-wiki/9788
 
 # Environemnt / Versions
 what's the distribution type? What version?
