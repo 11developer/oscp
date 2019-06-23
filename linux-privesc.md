@@ -788,4 +788,7 @@ https://medium.com/schkn/linux-privilege-escalation-using-text-editors-and-files
 # Abusing SETUID 
 https://www.hackingarticles.in/linux-privilege-escalation-using-suid-binaries/ 
 
+# Cron Jobs exploitation 
+https://www.hackingarticles.in/linux-privilege-escalation-by-exploiting-cron-jobs/ 
+
 
