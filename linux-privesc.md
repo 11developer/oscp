@@ -791,4 +791,15 @@ https://www.hackingarticles.in/linux-privilege-escalation-using-suid-binaries/
 # Cron Jobs exploitation 
 https://www.hackingarticles.in/linux-privilege-escalation-by-exploiting-cron-jobs/ 
 
+# Abuse Time Utility 
+https://www.hackingarticles.in/linux-for-pentester-time-privilege-escalation/ 
+
+# xxd privesc 
+https://www.hackingarticles.in/linux-for-pentester-xxd-privilege-escalation/ 
+
+# CAT exploitation
+https://www.hackingarticles.in/linux-for-pentester-cat-privilege-escalation/ 
+
+# Find command privesc 
+https://www.hackingarticles.in/linux-for-pentester-find-privilege-escalation/
 
