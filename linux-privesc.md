@@ -771,4 +771,7 @@ on the command line and make our victim to send us its reverse shell, like this:
 Checking our attacker machine which was already listening port 5000:
 
 #  References 
-https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/ 
+https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/  
+
+
+
