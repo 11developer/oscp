@@ -1,4 +1,6 @@
-edit full usage each  https://0x00sec.org/t/the-ultimate-privilege-escalation-reference-wiki/9788
+edit full usage each
+- guide to each privesc method 
+https://0x00sec.org/t/the-ultimate-privilege-escalation-reference-wiki/9788
 
 # Environemnt / Versions
 what's the distribution type? What version?
