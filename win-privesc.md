@@ -162,3 +162,6 @@ http://www.bhafsec.com/wiki/index.php/Windows_Privilege_Escalation
 https://github.com/AusJock/Privilege-Escalation/tree/master/Windows 
 https://github.com/abatchy17/WindowsExploits 
 ~~~
+
+# UAC bypass privesc 
+https://www.hackingarticles.in/multiple-ways-to-bypass-uac-using-metasploit/ 
