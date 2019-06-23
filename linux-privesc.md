@@ -1,3 +1,6 @@
+# Privesc via automation 
+https://www.hackingarticles.in/linux-privilege-escalation-via-automated-script/ 
+
 # Environemnt / Versions
 what's the distribution type? What version?
 ~~~
