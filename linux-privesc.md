@@ -1,7 +1,3 @@
-edit full usage each
-- guide to each privesc method 
-https://0x00sec.org/t/the-ultimate-privilege-escalation-reference-wiki/9788
-
 # Environemnt / Versions
 what's the distribution type? What version?
 ~~~
@@ -772,7 +768,7 @@ Checking our attacker machine which was already listening port 5000:
 
 #  References 
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/  
-
+https://0x00sec.org/t/the-ultimate-privilege-escalation-reference-wiki/9788 
 
 # Method based Linux Privesc Guides  
 
@@ -802,4 +798,13 @@ https://www.hackingarticles.in/linux-for-pentester-cat-privilege-escalation/
 
 # Find command privesc 
 https://www.hackingarticles.in/linux-for-pentester-find-privilege-escalation/
+
+# WGET privesc 
+https://www.hackingarticles.in/linux-for-pentester-wget-privilege-escalation/ 
+
+# ZIP privesc 
+https://www.hackingarticles.in/linux-for-pentester-zip-privilege-escalation/
+
+# APT exploitation 
+https://www.hackingarticles.in/linux-for-pentester-apt-privilege-escalation/ 
 
