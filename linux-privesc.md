@@ -774,10 +774,18 @@ Checking our attacker machine which was already listening port 5000:
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/  
 
 
-# Linux Privesc guides based on privsec categories 
+# Method based Linux Privesc Guides  
 
 # Multi User Escalation  
 https://labs.p64cyber.com/multi-user-escalation-iii/ 
 
 # Shared Libraries 
 https://www.boiteaklou.fr/Abusing-Shared-Libraries.html 
+
+# Abusing editors (Sudo) 
+https://medium.com/schkn/linux-privilege-escalation-using-text-editors-and-files-part-1-a8373396708d 
+
+# Abusing SETUID 
+https://www.hackingarticles.in/linux-privilege-escalation-using-suid-binaries/ 
+
+
