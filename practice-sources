@@ -1,28 +1,18 @@
-# CTF / WARGAMES / OTHERS..
-
-very nice for web app tests > https://www.hacksplaining.com/ 
-
+https://public.attackdefense.com/
+https://www.hacksplaining.com/ - WebApp tests
 https://lab.pentestit.ru/pentestlabs/3
 https://trailofbits.github.io/ctf/
 http://smashthestack.org/
-Google Gruyere
 http://google-gruyere.appspot.com/
-Hack This Site
 http://www.hackthissite.org/
-HackThis
 http://www.hackthis.co.uk/
-Hacking-Lab
 https://www.hacking-lab.com
-Hacker Test
 http://www.hackertest.net/
-Hax.Tor
 http://hax.tor.hu/
-OverTheWire
 http://www.overthewire.org/wargames/
-DEF CON CTF Archive
 https://www.defcon.org/html/links/dc-ctf.html
 
-A few Vulnhub VMs that are lookalike the oscp machines
+# Vulnhub OSCP lookalikes
 
     Kioptrix: Level 1 (#1)
     Kioptrix: Level 1.1 (#2)
@@ -43,7 +33,7 @@ A few Vulnhub VMs that are lookalike the oscp machines
     pWnOS: 2.0
 
 
-# Other people's exp and journey to OSCP and some of my favorite 
+# Some of other people's experience & journey to OSCP 
 
 https://medium.com/@hakluke/haklukes-ultimate-oscp-guide-part-1-is-oscp-for-you-b57cbcce7440?source=user_profile---------13------------------
 https://medium.com/@hakluke/haklukes-ultimate-oscp-guide-part-2-workflow-and-documentation-tips-9dd335204a48 
@@ -53,11 +43,11 @@ https://scriptdotsh.com/index.php/2018/04/17/31-days-of-oscp-experience/
 https://www.lewisecurity.com/i-am-finally-an-oscp/ 
 https://prasannakumar.in/infosec/my-walk-towards-cracking-oscp/ 
         
-# Watch all IPPSEC videos 
-https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA
-        
-        
-        
+# IPPSEC videos 
+https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA       
+       
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo      
+       
 # Buffer Overflows
 
 #EIP OVERWRITE 
