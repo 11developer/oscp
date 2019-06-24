@@ -4,16 +4,22 @@ google result shows dedicated write up for this exact match.
 
 # dirs
 > test the name of the domain/sub/ other indicator as dir name
-e.g. > target.e231.com/e231 or  target.e231.com/target
+e.g. > target.e231.com/e231 or  subname.e231.com/subname 
+check the methodlogy for more detail on this  
 
 # identifying versions
 * besides scanner 
 * from headers 
 * bottom page 
 * mouseoverview may reveal different version on object in web 
+* source code 
+* connect to services attempt 
+* banner grabbing 
+* fingerprint app (scan)
 
 # viewing flag.txt 
 If  can't open or view 
+if cat doesnt work depends on config
 try cat -A 
 
 head -filename-
