@@ -1,5 +1,5 @@
 # WEB
-# Step 1:Basic recon [ ports and services ]
+# Basic recon [ ports and services - Enum ]
 ~~~
 TCP SCAN 
 nmap -sC -sV -oA -ip-
@@ -8,7 +8,7 @@ UDP SCAN
 Nmap -Pn -p- -sU -vv -ip- 
 Other: All scan nmap -A -Pn IP -vv 
 ~~~
-# Step 2: Nmap script vulnerability scan 
+# Nmap script vulnerability scan 
 ~~~
 https://nmap.org/nsedoc/ -- scripts
 Nmap -Pn -sV -O -pT:{TCP ports found in step 1},U:{UDP ports found in step 1} -script *vuln* <ip address>
@@ -18,7 +18,7 @@ Grab banners manually for more clarity: nc -nv <ip-address> <port>
 - Kaboom https://github.com/Leviathan36/kaboom 
 - Trigmap https://4hou.win/wordpress/?p=32665 
  
-# Step 2.1: Subdomains check 
+# Subdomains check 
 ~~~
 knock # python knockpy.py target.com
 massscan [potential FP]
@@ -26,7 +26,7 @@ sublist3r # python3 sublist3r.py -v -d target.com
 alternative 
 https://github.com/OWASP/Amass/ 
 ~~~
-# Step 3: Any web dirs/sensitive data on subdomains 
+# Any web dirs/sensitive data on subdomains 
 ~~~
 # Usually sub domains are less secure / more misconfigurations 
 Nikto -port {web ports} -host ip address -o output file.txt
@@ -45,12 +45,12 @@ Use burpsuite - catch request / response data from headers etc.
 
 Do you see any interesting directory containing sensitive data?
 ~~~
-# Step 4: Are there any exploits available publicly from the services discovered from Step 2?
+# Are there any exploits available publicly from the services discovered from nmap scan?
 ~~~
 Searchsploit <service name> 
 Or general search globally maybe https://sploitus.com/ for different sources
 ~~~
-# Step 5: Manual web testing 
+# Manual web testing 
 ~~~
 Check the Page Source, Inspect elements, view cookies, tamper data, use curl/wget
 
@@ -89,8 +89,8 @@ manually go to robots.txt or sitemap.xml if exist
 ~~~                                   
 # NETWORK
                                      
-# Step 5.1:Semi auto recon + exploit suggest based on results - https://github.com/frizb/Vanquish                                      
-# Step 6: Are there any NETBIOS, SMB, RPC ports discovered from Step 1?
+# Semi auto recon + exploit suggest based on results - https://github.com/frizb/Vanquish                                      
+# Are there any NETBIOS, SMB, RPC ports discovered from Step 1?
 
 # SMB
 
@@ -199,7 +199,7 @@ Net view \\<ip-address>
 
 Check NMAP Scripts for SMB, DCERPC and NETBIOS
 
-# Step 7: Any SMTP ports available?
+# Any SMTP ports available?
 
 Enumerate Users:
 
@@ -209,7 +209,7 @@ Mail Server Testing
         VRFY username (verifies if username exists – enumeration of accounts)
         EXPN username (verifies if username is valid – enumeration of accounts)
 
-# Step 8: How about SNMP ports?
+# SNMP ports?
 ~~~
 ~~~
 Default Community Names: public, private, cisco, manager
@@ -231,7 +231,7 @@ Eg: enumerating running processes:
 snmpwalk -c public -v1 192.168.11.204 1.3.6.1.2.1.25.4.2.1.2
 ~~~
 
-# Step 9: FTP Ports Discovered
+# FTP Ports ?
 ~~~
 Is anonymous login allowed?
 
@@ -240,14 +240,15 @@ If yes, is directory listing possible? Can a file be ‘get’ or ‘send’?
 Use browser: ftp://<ip-address> , What do you find?
 ~~~
 
-# Step 10: Password Cracking / Brute Forcing
+# Password Cracking / Brute Forcing
 ~~~
 
 Try this as the last resort or in case the Passwd/Shadow/SAM files are in possession:
 
 For linux, first combine passwd & shadow files:  unshadow [passwd-file] [shadow-file] > unshadowed.txt
 
-Then, use John on the unshadowed file using a wordlist or rules mangling : john –rules –wordlist=<wordlist file> unshadowed.txt
+Then, use John on the unshadowed file using a wordlist or rules mangling : 
+john –rules –wordlist=<wordlist file> unshadowed.txt
 
 Identifying Hash: hash-identifier
 
