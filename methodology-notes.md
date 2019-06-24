@@ -44,8 +44,6 @@ if no dirs/contect found - test for customized dirs based on target name, clues 
 Use burpsuite - catch request / response data from headers etc. 
 
 Do you see any interesting directory containing sensitive data?
-
-Do you see any LFI/RFI vulnerability posted by Nikto? Try fimap: fimap -u <ip-address>
 ~~~
 # Step 4: Are there any exploits available publicly from the services discovered from Step 2?
 ~~~
@@ -97,7 +95,7 @@ manually go to robots.txt or sitemap.xml if exist
 enum4linux -a <ip address>
 ~~~
 ~~~
-Rpcclient <ip address> -U “” -N
+Rpcclient <ip address> -U -N
 ~~~
 ~~~
 Rpcinfo: What services are running? Rpcinfo -p <target ip>
