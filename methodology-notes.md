@@ -1,16 +1,14 @@
-
-https://paper.dropbox.com/doc/OSCP-Methodology-EnVX7VSiNGZ2K2QxCZD7Q
-
 # WEB
-# Step 1:Basic scan
+# Step 1:Basic recon [ ports and services ]
 ~~~
 TCP SCAN 
 nmap -sC -sV -oA -ip-
 Nmap -Pn -p- -vv -ip-
 UDP SCAN
-Nmap -Pn -p- -sU -vv -ip-
+Nmap -Pn -p- -sU -vv -ip- 
+Other: All scan nmap -A -Pn IP -vv 
 ~~~
-# Step 2: Nmap version and vulnerability Scan: 
+# Step 2: Nmap script vulnerability scan 
 ~~~
 https://nmap.org/nsedoc/ -- scripts
 Nmap -Pn -sV -O -pT:{TCP ports found in step 1},U:{UDP ports found in step 1} -script *vuln* <ip address>
@@ -23,42 +21,57 @@ Grab banners manually for more clarity: nc -nv <ip-address> <port>
 # Step 2.1: Subdomains check 
 ~~~
 knock # python knockpy.py target.com
-massscan 
+massscan [potential FP]
 sublist3r # python3 sublist3r.py -v -d target.com
-
 alternative 
 https://github.com/OWASP/Amass/ 
 ~~~
-# Step 3: Any web dirs/sensitive data on subs/domain?:
+# Step 3: Any web dirs/sensitive data on subdomains 
 ~~~
+# Usually sub domains are less secure / more misconfigurations 
 Nikto -port {web ports} -host ip address -o output file.txt
-Dirb http{s}://ip address:port /usr/share/wordlist/dirb/{common/small/vulns}.txt
+
+Dirb http{s}://ip address:port /usr/share/wordlist/dirb/{common/small/big/targeted}.txt
+or
 Gobuster -u http://<ip-address> -w /usr/share/Seclists/Discovery/Web_Content/common.txt
-if no dirs/contect found - test for customized dirs based on target name, clues - etc.
-/usr/share/secLists/Discovery folder has some great word lists
-If no web dirs visible try a bigger list in dirb: /usr/share/wordlist/dirb/big.txt
-if no dirs then check for customized dirs for each sub based on target keywords, info
-Use Burpsuite if needed
+
+# recomended to scan IP instead of domain name
+
+also /usr/share/secLists/Discovery folder has some great word lists
+If no dirs visible try /big.txt
+if no dirs/contect found - test for customized dirs based on target name, clues from pages- etc.
+
+Use burpsuite - catch request / response data from headers etc. 
+
 Do you see any interesting directory containing sensitive data?
+
 Do you see any LFI/RFI vulnerability posted by Nikto? Try fimap: fimap -u <ip-address>
 ~~~
 # Step 4: Are there any exploits available publicly from the services discovered from Step 2?
 ~~~
-Searchsploit <service name>
+Searchsploit <service name> 
+Or general search globally maybe https://sploitus.com/ for different sources
 ~~~
-# Step 5: Manual tests for Web pages/app
+# Step 5: Manual web testing 
 ~~~
 Check the Page Source, Inspect elements, view cookies, tamper data, use curl/wget
 
-    Google alien terms!
-    Anything sensitive there?
+    Any info exposure 
+- hardcoded crednetials or potential leads revealed to client side 
     Any version info?
-    Headers?
+- from responce headers/ source code / fingerprinting app 
+    Headers 
+- allowes methods  ? server type / other data 
     Dirs or syntax crawlers cannot catch?
+manually go to robots.txt or sitemap.xml if exist 
+- does the source code reveal links or redirect points to other content on the server  hidden ?
+    
+    curl -v -X OPTIONS http://<targetip>/test/
 ~~~
-Search object online (like GitHub) if the application used is open source: this may assist in site enumeration and guessing versions etc.!
 
-# part of step5 > Check HTTP Options
+# Search online (e.g. GitHub) if the application used is open source: this may assist in site enumeration and guessing versions/dirs/paths/etc.!
+
+# part of step5 > Check HTTP Options (PUT - file upload..etc)
 
 # Check for Input Validation in forms 
 ~~~
@@ -194,3 +207,8 @@ Use Wireshark / tcpdump to capture traffic on the target host:
 
 “tcpdump -i tap0 host <target-ip> tcp port 80 and not arp and not icmp -vv”
 ~~~
+
+
+# References 
+https://paper.dropbox.com/doc/OSCP-Methodology-EnVX7VSiNGZ2K2QxCZD7Q  
+
