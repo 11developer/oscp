@@ -91,6 +91,82 @@ manually go to robots.txt or sitemap.xml if exist
                                      
 # Step 5.1:Semi auto recon + exploit suggest based on results - https://github.com/frizb/Vanquish                                      
 # Step 6: Are there any NETBIOS, SMB, RPC ports discovered from Step 1?
+
+# SMB
+
+Port 139 and 445- SMB/Samba shares
+Samba is a service that enables the user to share files with other machines
+works the same as a command line FTP client, may browse files without even having credentials
+
+# Share List:
+smbclient --list <targetip>
+smbclient -L <targetip>
+
+# Check SMB vulnerabilities:
+nmap --script=smb-check-vulns.nse <targetIP> -p445
+
+# basic nmap scripts to enumerate shares and OS discovery
+nmap -p 139,445 <targetIP> --script smb-enum-shares.nse smb-os-discovery.nse
+
+# Connect using Username
+smbclient -L <targetip> -U username -p 445
+
+# Connect to Shares
+smbclient \\\\<targetip>\\ShareName
+smbclient \\\\<targetip>\\ShareName -U john
+
+# enumarete with smb-shares, -a “do everything” option
+enum4linux -a 192.168.1.14
+
+# learn the machine name and then enumerate with smbclient
+nmblookup -A 192.168.1.14
+smbclient -L <server_name> -I 192.168.1.14
+
+# rpcclient - Connect with a null-session (only works for older windows servers)
+rpcclient -U james 10.10.10.52
+rpcclient -U "" 192.168.1.105
+(press enter if asks for a password)
+rpcclient $> srvinfo
+rpcclient $> enumdomusers
+rpcclient $> enumalsgroups domain
+rpcclient $> lookupnames administrators
+rpcclient> querydominfo
+rpcclient> enumdomusers
+rpcclient> queryuser john
+
+# scan for vulnerabilities with nmap for 139,445
+nmap --script "vuln" <targetip> -p139,445
+
+# SMTP
+# telnet or netcat connection
+nc <targetip> 25
+VRFY root
+# Check for commands
+nmap -script smtp-commands.nse <targetip>
+
+
+# Port 111 - RPC
+
+Rpcbind can help us look for NFS-shares. So look out for nfs. Obtain list of services running with RPC:
+
+rpcbind -p <targetip>
+rpcinfo –p x.x.x.x
+
+using nmap, see which port NFS is listening
+locate *rpc*.nse
+nmap --script rpcinfo.nse <targetip> -p 111
+
+-------------------------
+
+# NFS
+
+# to find the public share
+locate *nfs*.nse
+nmap --script nfs-showmount.nse <targetip>
+
+# mount the share to a folder under /tmp
+mkdir /tmp/nfs
+/sbin/mount.nfs <targetip>:/home/box /tmp/nfs
 ~~~
 enum4linux -a <ip address>
 ~~~
@@ -140,29 +216,19 @@ Default Community Names: public, private, cisco, manager
 
 Enumerate MIB:
 
-1.3.6.1.2.1.25.1.6.0 System Processes
+System Processes
+Running Programs
+Processes Path
+Storage Units
+Software Name
+User Accounts
+TCP Local Ports
 
-1.3.6.1.2.1.25.4.2.1.2 Running Programs
-
-1.3.6.1.2.1.25.4.2.1.4 Processes Path
-
-1.3.6.1.2.1.25.2.3.1.4 Storage Units
-
-1.3.6.1.2.1.25.6.3.1.2 Software Name
-
-1.3.6.1.4.1.77.1.2.25 User Accounts
-
-1.3.6.1.2.1.6.13.1.3 TCP Local Ports
-
-Use tools:
-
+Tools:
 Onesixtyone – c <community list file> -I <ip-address>
-
 Snmpwalk -c <community string> -v<version> <ip address>
-
 Eg: enumerating running processes:
-
-root@kali:~# snmpwalk -c public -v1 192.168.11.204 1.3.6.1.2.1.25.4.2.1.2
+snmpwalk -c public -v1 192.168.11.204 1.3.6.1.2.1.25.4.2.1.2
 ~~~
 
 # Step 9: FTP Ports Discovered
