@@ -1,5 +1,8 @@
 # Shells 
 
+# Reverse Shell Generator 
+https://dc20e6.ru/tools/reverse-shell-generator 
+
 Set your Netcat listening shell on an allowed port
 Use a port that is likely allowed via outbound firewall rules on the target network, e.g. 80 / 443
 
