@@ -26,6 +26,11 @@ Nikto - Dirb | Nmap - Metasploit | Searchsploit - Metasploit | hydra
 tools leveraged: 
 | NMap | Hydra | Nikto | Metasploit | | Gobuster | Dirb | Exploitdb | Nbtscan | | Ntpq | Enum4linux | Smbclient | Rpcclient | | Onesixtyone | Sslscan | Sslyze | Snmpwalk | | Ident-user-enum | Smtp-user-enum | Snmp-check | Cisco-torch | | Dnsrecon | Dig | Whatweb | Wafw00f | | Wpscan | Cewl | Curl | Mysql | Nmblookup | Searchsploit | | Nbtscan-unixwiz | Xprobe2 | Blindelephant | Showmount |
 
+3. Reconnoitre https://github.com/codingo/Reconnoitre
+
+automate information gathering and service enumeration whilst creating a directory structure to store results, 
+findings and exploits used for each host, recommended commands to execute and directory structures for storing loot and flags.
+
 # Subdomains  
 ~~~
 bruteforce: 
