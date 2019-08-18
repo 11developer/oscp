@@ -2,12 +2,12 @@
 # ports & services recon
 ~~~
 TCP SCAN 
-nmap -sC -sV -oA -ip-
-Nmap -Pn -p- -vv -ip-
+nmap -sC -sV -oA IP
+Nmap -Pn -p- -vv IP
 UDP SCAN
-Nmap -Pn -p- -sU -vv -ip-
+Nmap -Pn -p- -sU -vv IP
 
-Other: All scan nmap -A -Pn IP -vv 
+All scan nmap -A -Pn IP -vv 
 ~~~
 # Nmap targeted vuln scan
 ~~~
@@ -24,8 +24,7 @@ BF:hydra
 
 2. Vanquish https://github.com/frizb/Vanquish 
 
-
-# Subdomains check 
+# Subdomains  
 ~~~
 bruteforce: 
 knock # python knockpy.py target.com
@@ -37,7 +36,7 @@ https://github.com/OWASP/Amass/
 Any hidden subdomains? 
 *.*.domain.xyz
 ~~~
-# Any web dirs/sensitive data on subdomains 
+# dirs/sensitive data on subdomains 
 ~~~
 # Usually sub domains are less secure / more misconfigurations 
 Nikto -port {web ports} -host ip address -o output file.txt
@@ -80,7 +79,7 @@ manually go to robots.txt or sitemap.xml if exist
 
 # Search online (e.g. GitHub) if the application used is open source: this may assist in site enumeration and guessing versions/dirs/paths/etc.!
 
-# part of step5 > Check HTTP Options (PUT - file upload..etc)
+# part of step5 > Check HTTP Options (PUT - file upload..etc [php web shell])
 
 # Check for Input Validation in forms 
 ~~~
@@ -92,12 +91,48 @@ manually go to robots.txt or sitemap.xml if exist
     – , = , + , ”
         Used to craft SQL Injection queries.
     ‘ , &, ! , ¦ , < , >
-        Used to find command execution vulnerabilities.
+        Used to find command execution vulns.
     ../
-        Directory Traversal Vulnerabilities. 
+        Directory Traversal vulns
                                      
        Check network during page load > any additional files / does it take source from remote addr / pull data / etc
-~~~                                   
+~~~    
+# chekc for interesting parameters to test 
+~~~
+Something that has worked for me is checking on parameters, pick a parameter that has an effect on the flow of the application. 
+For example, if a field takes a number (lets call it ID).
+
+What happens if:
+
+-put in a minus number value?
+
+-increment or decrement the number?
+
+-put in a really large number?
+
+-string or symbol characters?
+
+-traverse a directory with …/
+
+-XSS vectors?
+
+-SQLI vectors?
+
+-non-ascii characters?
+
+-mess with the variable type such as casting a string to an array
+
+-null characters or no value
+
+Check if you can draw any conclusions from the outcomes of these tests,
+
+-understand error output
+
+-is anything broken or exposed
+
+-can this action affect other things in the web app.
+~~~   
+
 # NETWORK
                                      
 # Semi auto recon + exploit suggest based on results - https://github.com/frizb/Vanquish                                      
