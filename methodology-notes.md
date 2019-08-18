@@ -5,25 +5,35 @@ TCP SCAN
 nmap -sC -sV -oA -ip-
 Nmap -Pn -p- -vv -ip-
 UDP SCAN
-Nmap -Pn -p- -sU -vv -ip- 
+Nmap -Pn -p- -sU -vv -ip-
+
 Other: All scan nmap -A -Pn IP -vv 
 ~~~
 # Nmap script vulnerability scan 
 ~~~
-https://nmap.org/nsedoc/ -- scripts
-Nmap -Pn -sV -O -pT:{TCP ports found in step 1},U:{UDP ports found in step 1} -script *vuln* <ip address>
+https://nmap.org/nsedoc/ 
+example of script usage:
+nmap --script=VULN-TEST-XYZ -p 3366 <targets>
 Grab banners manually for more clarity: nc -nv <ip-address> <port>
  ~~~ 
 # Automatic scanners + Vulnerability Assessments tools 
-- Kaboom https://github.com/Leviathan36/kaboom 
-- Trigmap https://4hou.win/wordpress/?p=32665 
+1. Kaboom https://github.com/Leviathan36/kaboom 
+info gather: nmap +  dirb 
+vuln assesment: Nikto - Dirb | Nmap - Metasploit | Searchsploit - Metasploit 
+BF:hydra 
+
+2. 
+
+
+
  
 # Subdomains check 
 ~~~
+bruteforce: 
 knock # python knockpy.py target.com
-massscan [potential FP]
+records: 
 sublist3r # python3 sublist3r.py -v -d target.com
-alternative 
+OWASP:
 https://github.com/OWASP/Amass/ 
 ~~~
 # Any web dirs/sensitive data on subdomains 
