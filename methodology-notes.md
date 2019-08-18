@@ -1,5 +1,5 @@
 # WEB
-# Basic recon [ ports and services - Enum ]
+# ports & services recon
 ~~~
 TCP SCAN 
 nmap -sC -sV -oA -ip-
@@ -9,24 +9,22 @@ Nmap -Pn -p- -sU -vv -ip-
 
 Other: All scan nmap -A -Pn IP -vv 
 ~~~
-# Nmap script vulnerability scan 
+# Nmap targeted vuln scan
 ~~~
 https://nmap.org/nsedoc/ 
 example of script usage:
 nmap --script=VULN-TEST-XYZ -p 3366 <targets>
 Grab banners manually for more clarity: nc -nv <ip-address> <port>
  ~~~ 
-# Automatic scanners + Vulnerability Assessments tools 
+# semi automatic scanners (recon + vuln assesement + exploitation)
 1. Kaboom https://github.com/Leviathan36/kaboom 
 info gather: nmap +  dirb 
 vuln assesment: Nikto - Dirb | Nmap - Metasploit | Searchsploit - Metasploit 
 BF:hydra 
 
-2. 
+2. Vanquish https://github.com/frizb/Vanquish 
 
 
-
- 
 # Subdomains check 
 ~~~
 bruteforce: 
@@ -35,6 +33,9 @@ records:
 sublist3r # python3 sublist3r.py -v -d target.com
 OWASP:
 https://github.com/OWASP/Amass/ 
+
+Any hidden subdomains? 
+*.*.domain.xyz
 ~~~
 # Any web dirs/sensitive data on subdomains 
 ~~~
