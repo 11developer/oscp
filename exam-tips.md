@@ -8,14 +8,14 @@ e.g. > target.e231.com/e231 or  subname.e231.com/subname
 check the methodlogy for more detail on this  
 
 # identifying versions
-* besides scanner 
+besides scanner output
 * from headers 
 * bottom page 
 * mouseoverview may reveal different version on object in web 
-* source code 
-* connect to services attempt 
-* banner grabbing 
-* fingerprint app (scan)
+* source code [if not direct reveal, then based on libraries, other indicators]
+* connect to services attempt [-sC]
+* banner grabbing [nc]
+* fingerprint app [scan]
 
 # viewing flag.txt 
 If  can't open or view 
