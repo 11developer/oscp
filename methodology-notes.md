@@ -42,12 +42,13 @@ Any hidden subdomains?
 ~~~
 # dirs/sensitive data on subdomains 
 ~~~
-# Usually sub domains are less secure / more misconfigurations 
-Nikto -port {web ports} -host ip address -o output file.txt
+# Usually sub domains are less secure / more security misconfigurations 
+try
+nikto -port IP -o output machine192-168-1-3.txt
 
-Dirb http{s}://ip address:port /usr/share/wordlist/dirb/{common/small/big/targeted}.txt
+dirb http{s}://ip address:port /usr/share/wordlist/dirb/{common(default)/big/targeted}.txt
 or
-Gobuster -u http://<ip-address> -w /usr/share/Seclists/Discovery/Web_Content/common.txt
+gobuster -u http://<ip-address> -w /usr/share/Seclists/Discovery/Web_Content/common.txt
 
 # recomended to scan IP instead of domain name
 
@@ -55,14 +56,12 @@ also /usr/share/secLists/Discovery folder has some great word lists
 If no dirs visible try /big.txt
 if no dirs/contect found - test for customized dirs based on target name, clues from pages- etc.
 
-Use burpsuite - catch request / response data from headers etc. 
-
 Do you see any interesting directory containing sensitive data?
 ~~~
 # Are there any exploits available publicly from the services discovered from nmap scan?
 ~~~
-Searchsploit <service name> 
-Or general search globally maybe https://sploitus.com/ for different sources
+Searchsploit apache 2 grep local or remote  
+Or https://sploitus.com/
 ~~~
 # Manual web testing 
 ~~~
@@ -76,7 +75,9 @@ Check the Page Source, Inspect elements, view cookies, tamper data, use curl/wge
 - allowes methods  ? server type / other data 
     Dirs or syntax crawlers cannot catch?
 manually go to robots.txt or sitemap.xml if exist 
-- does the source code reveal links or redirect points to other content on the server  hidden ?
+- does the source code reveal unreferenced links or redirect points to other content on the server?
+
+try burpsuite - catch request / response data from headers etc. 
     
     curl -v -X OPTIONS http://<targetip>/test/
 ~~~
@@ -101,7 +102,7 @@ manually go to robots.txt or sitemap.xml if exist
                                      
        Check network during page load > any additional files / does it take source from remote addr / pull data / etc
 ~~~    
-# chekc for interesting parameters to test 
+# any interesting parameters to test 
 ~~~
 Something that has worked for me is checking on parameters, pick a parameter that has an effect on the flow of the application. 
 For example, if a field takes a number (lets call it ID).
