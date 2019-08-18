@@ -18,11 +18,13 @@ Grab banners manually for more clarity: nc -nv <ip-address> <port>
  ~~~ 
 # semi automatic scanners (recon + vuln assesement + exploitation)
 1. Kaboom https://github.com/Leviathan36/kaboom 
+
 info gather: nmap +  dirb 
 vuln assesment: Nikto - Dirb | Nmap - Metasploit | Searchsploit - Metasploit 
 BF:hydra 
 
 2. Vanquish https://github.com/frizb/Vanquish 
+
 tools leveraged: 
 | NMap | Hydra | Nikto | Metasploit | | Gobuster | Dirb | Exploitdb | Nbtscan | | Ntpq | Enum4linux | Smbclient | Rpcclient | | Onesixtyone | Sslscan | Sslyze | Snmpwalk | | Ident-user-enum | Smtp-user-enum | Snmp-check | Cisco-torch | | Dnsrecon | Dig | Whatweb | Wafw00f | | Wpscan | Cewl | Curl | Mysql | Nmblookup | Searchsploit | | Nbtscan-unixwiz | Xprobe2 | Blindelephant | Showmount |
 
