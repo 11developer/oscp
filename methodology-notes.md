@@ -331,3 +331,6 @@ Use Wireshark / tcpdump to capture traffic on the target host:
 # References 
 https://paper.dropbox.com/doc/OSCP-Methodology-EnVX7VSiNGZ2K2QxCZD7Q  
 
+# BOF - identify bad chars 
+https://github.com/ihack4falafel/OSCP/blob/master/Documents/Hunting%20bad%20characters%20with%20mona.pdf
+
