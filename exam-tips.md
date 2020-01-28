@@ -51,7 +51,3 @@ xdg-open -filename-
 
 if viewing doesnt work at all - download to local machine 
 
-# VM 
-
-have a prepared machine wth all the required tools to aid in the exam 
-
