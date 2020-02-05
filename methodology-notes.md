@@ -2,7 +2,6 @@
 # discover ports & services recon
 ~~~
 TCP SCAN 
-nmap -sC -sV -oA IP
 Nmap -Pn -p- -vv IP
 UDP SCAN
 Nmap -Pn -p- -sU -vv IP
