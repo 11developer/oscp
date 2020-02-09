@@ -23,10 +23,11 @@ google result shows dedicated write up for this exact match.
 
 
 # viewing flag.txt 
-| Name | - |
+| command | - |
 |:---:|:---:|
 |view OR dl|
-| cat | OR | cat -A |
+| cat | 
+| cat -A |
 | head -filename- |
 | less -filename-  |
 | tail -f -filename- |
