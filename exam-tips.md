@@ -4,13 +4,13 @@ google result shows dedicated write up for this exact match.
 
 
 # dirs
-| Name | - | 
+| - | - | 
 |:---:|:---:|
 |test the name of the domain/sub/ other indicator as dir name |
 |e.g. > target.e231.com/e231 or  subname.e231.com/subname  |
 
 # identifying versions 
-| Name | - |
+| - | - | 
 |:---:|:---:|
 | scanner output |
 | headers |
@@ -31,8 +31,8 @@ google result shows dedicated write up for this exact match.
 | less -filename-  |
 | tail -f -filename- |
 | more -filename- |
+| type -filename- |
 
-type -filename-
 
 >> try open file with editors 
 
