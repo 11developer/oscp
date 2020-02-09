@@ -4,10 +4,9 @@
 google result shows dedicated write up for this exact match.
 
 # directories
-| - | - | 
-|:---:|:---:|
-|test the name of the domain/sub/ other indicator as dir name |
-|e.g. > target.e231.com/e231 or  subname.e231.com/subname  |
+
+>> test the name of the domain/sub/ other indicator as dir name 
+>> e.g. > target.e231.com/e231 or  subname.e231.com/subname  
 
 # identifying versions 
 | - | - | 
