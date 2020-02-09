@@ -4,12 +4,14 @@ google result shows dedicated write up for this exact match.
 
 
 # dirs
-|:---:|
+| Name | Source | 
+|:---:|:---:|
 |test the name of the domain/sub/ other indicator as dir name |
 |e.g. > target.e231.com/e231 or  subname.e231.com/subname  |
 
 # identifying versions 
-|:---:|
+| Name | Source | 
+|:---:|:---:|
 | scanner output |
 | headers |
 | bottom page  |
@@ -21,7 +23,8 @@ google result shows dedicated write up for this exact match.
 
 
 # viewing flag.txt 
-|:---:|
+| Name | Source | 
+|:---:|:---:|
 |view OR dl|
 | cat | OR | cat -A |
 | head -filename- |
@@ -33,7 +36,8 @@ type -filename-
 
 >> try open file with editors 
 
-|:---:|
+| Name | Source | 
+|:---:|:---:|
 | vi -filename- |
 | vim -filename- |
 | emacs -filename- |
