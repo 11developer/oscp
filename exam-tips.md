@@ -25,7 +25,6 @@ google result shows dedicated write up for this exact match.
 # viewing flag.txt 
 | command | - |
 |:---:|:---:|
-|view OR dl|
 | cat | 
 | cat -A |
 | head -filename- |
@@ -37,7 +36,7 @@ type -filename-
 
 >> try open file with editors 
 
-| Name | - |
+| command | - |
 |:---:|:---:|
 | vi -filename- |
 | vim -filename- |
