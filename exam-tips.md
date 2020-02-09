@@ -1,7 +1,9 @@
 # find exploits
+
 '''
 sometimes these are 1:1 as the lab practice for example apache + postfix + vulnhub > 
 google result shows dedicated write up for this exact match.
+
 '''
 
 # dirs
