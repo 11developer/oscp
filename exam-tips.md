@@ -2,10 +2,12 @@
 > sometimes these are 1:1 as the lab practice for example apache + postfix + vulnhub > 
 google result shows dedicated write up for this exact match.
 
+
 # dirs
-> test the name of the domain/sub/ other indicator as dir name
-e.g. > target.e231.com/e231 or  subname.e231.com/subname 
-check the methodlogy for more detail on this  
+| - | 
+|:---:|
+|test the name of the domain/sub/ other indicator as dir name |
+|e.g. > target.e231.com/e231 or  subname.e231.com/subname  |
 
 # identifying versions
 besides scanner output
