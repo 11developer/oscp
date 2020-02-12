@@ -2,25 +2,26 @@
 # discover ports & services recon
 ~~~
 TCP SCAN 
-Nmap -Pn -p- -vv IP
-UDP SCAN
-Nmap -Pn -p- -sU -vv IP
+Nmap -Pn -p- -vv 192.168.x.x
 
-All scan nmap -A -Pn IP -vv 
+UDP SCAN
+Nmap -Pn -p- -sU -vv 192.168.x.x
+
+All scan nmap -A -Pn 192.168.x.x -vv 
 ~~~
 # Nmap targeted vuln scan
 ~~~
 https://nmap.org/nsedoc/ 
 example of script usage:
 nmap --script=VULN-TEST-XYZ -p 3366 <targets>
-Grab banners manually for more clarity: nc -nv <ip-address> <port>
+Grab banners manually for more clarity: nc -nv <192.168.x.x> <port>
  ~~~ 
 # semi automatic scanners (recon + vuln assesement + exploitation)
-1. Kaboom https://github.com/Leviathan36/kaboom 
+Kaboom https://github.com/Leviathan36/kaboom 
 
 Nikto - Dirb | Nmap - Metasploit | Searchsploit - Metasploit | hydra
 
-2. Vanquish https://github.com/frizb/Vanquish 
+Vanquish https://github.com/frizb/Vanquish 
 
 tools leveraged: 
 | NMap | Hydra | Nikto | Metasploit | | Gobuster | Dirb | Exploitdb | Nbtscan | | Ntpq | Enum4linux | Smbclient | Rpcclient | | Onesixtyone | Sslscan | Sslyze | Snmpwalk | | Ident-user-enum | Smtp-user-enum | Snmp-check | Cisco-torch | | Dnsrecon | Dig | Whatweb | Wafw00f | | Wpscan | Cewl | Curl | Mysql | Nmblookup | Searchsploit | | Nbtscan-unixwiz | Xprobe2 | Blindelephant | Showmount |
