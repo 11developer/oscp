@@ -24,3 +24,4 @@
 
 [practice & write-ups](https://github.com/ex16x41/OSCP-prep/blob/master/practice-sources)
 
+https://devhints.io/curl 
