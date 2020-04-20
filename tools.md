@@ -9,3 +9,4 @@ nmap NSE
 searchspploit 
 
 
+- keep notes with tree
