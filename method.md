@@ -24,7 +24,7 @@ we run systemctl with the start option followed by the service name
 
 "sudo systemctl start ssh" 
 
-# verify service running:
+# verify a service running:
 
 by using the ss command and piping the output into grep to search the output for “sshd”: 
 
@@ -35,7 +35,7 @@ sudo ss -antlp | grep sshd
 LISTEN 0 128 *:22 *:* users:(("sshd",pid=1343,fd=3)) 
 LISTEN 0 128 :::22 :::* users:(("sshd",pid=1343,fd=4)) 
 
-# make a server (SSH) start automatically at boot time
+# make a service (SSH) start automatically at boot time
 
 sudo systemctl enable ssh 
 
