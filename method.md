@@ -1,4 +1,4 @@
-# The directories you will find most useful are:
+# most useful directories
 
 • /bin - basic programs (ls, cd, cat, etc.)
 
