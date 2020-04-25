@@ -43,3 +43,21 @@ sudo systemctl enable ssh
 
 # HTTP Service 
 
+apache http service often use for 
+ 
+* providing a platform for downloading files to a victim machine  
+* hosting a site 
+
+# start http service 
+
+sudo systemctl start apache2 
+
+# verify http running 
+
+sudo ss -antlp | grep apache 
+
+# start http service at boot time [automatically] 
+
+sudo systemctl enable apache2 
+
+
