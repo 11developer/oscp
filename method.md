@@ -1,9 +1,15 @@
-The directories you will find most useful are:
+# The directories you will find most useful are:
+
 • /bin - basic programs (ls, cd, cat, etc.)
+
 • /sbin - system programs (fdisk, mkfs, sysctl, etc)
+
 • /etc - configuration files
+
 • /tmp - temporary files (typically deleted on boot)
+
 • /usr/bin - applications (apt, ncat, nmap, etc.)
+
 • /usr/share - application support and data files 
 
 # Managing Kali Linux Services 
