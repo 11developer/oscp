@@ -1,27 +1,26 @@
-# find exploits
+# FIND EXPLOITS IN THE WILD
 
->> sometimes these are 1:1 as the lab practice for example apache + postfix + vulnhub > 
+>> sometimes vulns and exploits are 1:1 as the lab for example apache + postfix + vulnhub > 
 google result shows dedicated write up for this exact match.
 
-# directories
+# DIRS [WEB]
 
 >> test the name of the domain/sub/ other indicator as dir name 
 >> e.g. > target.e231.com/e231 or  subname.e231.com/subname  
 
-# identifying versions 
+
+# SOFTWARE VERSION IDENTIFICATION
 | - | - | 
 |:---:|:---:|
 | scanner output |
 | headers |
 | bottom page  |
 | mouseoverview may reveal different version on object in web  |
-| source code [if not direct reveal, then based on libraries, other indicators] |
+| source code [any identifying libraries used..etc] 
 | connect to services attempt [-sC] |
-| banner grabbing [nc] |
-| fingerprint app [scan] |
 
 
-# viewing flag.txt 
+# VIEW FLAG.TXT [USER/ROOT] 
 | command | - |
 |:---:|:---:|
 | cat | 
