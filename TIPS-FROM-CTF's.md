@@ -6,7 +6,12 @@ google result shows dedicated write up for this exact match.
 # DIRS [WEB]
 
 >> test the name of the domain/sub/ other indicator as dir name 
->> e.g. > target.e231.com/e231 or  subname.e231.com/subname  
+
+>> e.g. > target.e231.com/e231 
+
+OR
+
+subname.e231.com/subname  
 
 
 # SOFTWARE VERSION IDENTIFICATION
