@@ -1,15 +1,29 @@
-# Describe brief each writeup contents 
-
+# MACHINE 1 
 
 https://telegra.ph/machine1-writeup-08-23 
 
 RECON : 22,80,8080 
+
 ENUM : TOMCAT SRV
+
 WEB : LFI 
+
 METHOD : RCE 
+
 AUTH : 1 .GAIN CREDS TO SERVER
+
 2. CREATE, UPLOAD, EXECUTE SHELL
+
 ACCESS : USER >  PRIVESC WITH LXD 
+
+
+
+
+
+# MACHINE 2 
+
+
+
 
 
 
