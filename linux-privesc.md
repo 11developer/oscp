@@ -1,3 +1,6 @@
+EDIT THIS BY METHODS 
+
+
 # Privesc via automation 
 https://www.hackingarticles.in/linux-privilege-escalation-via-automated-script/ 
 
