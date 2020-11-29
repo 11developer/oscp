@@ -34,7 +34,9 @@ Antivirus Bypassing
 
 ## tools i know 
 
-1. nmap 
+1. nmap https://blog.zsec.uk/nmap-rtfm/ 
+
+
 2. wireshark 
 3. metasploit 
 4. burp-suite 
