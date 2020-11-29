@@ -1,6 +1,6 @@
 ## to learn 
 
-1. python basics (compiling, scripting, setup server, run code, transfer, download..etc) 
+1. python + PHP basics (compiling, scripting, setup server, run code, transfer, download..etc) 
 2. web app basics (client side attacks, server side attacks (owasp top 10) 
 3. js basics
 4. network attacks (smb, ftp, active directory)
