@@ -3,6 +3,9 @@
 >> sometimes vulns and exploits are 1:1 as the lab for example apache + postfix + vulnhub > 
 google result shows dedicated write up for this exact match.
 
+
+## WEB
+
 # DIRS
 
 >> test the name of the domain/sub/ other indicator as dir name 
