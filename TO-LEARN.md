@@ -1,6 +1,6 @@
-Getting Comfortable with Kali Linux (Env + bash) 
+Getting Comfortable with Kali Linux (Env + bash)  *
 
-Essential Tools in Kali
+Essential Tools in Kali *
 
 Passive Reconnaissance * 
 
@@ -38,7 +38,17 @@ Antivirus Bypassing
 2. wireshark 
 3. metasploit 
 4. burp-suite 
-5. netcat 
+
+
+
+5. netcat
+https://www.sans.org/security-resources/sec560/netcat_cheat_sheet_v1.pdf 
+
+https://medium.com/@_sathishshan/netcat-vs-ncat-3e5c421db085
+
+
+
+GUIDES:
 
 
 https://www.netsecfocus.com/oscp/2019/03/29/The_Journey_to_Try_Harder-_TJNulls_Preparation_Guide_for_PWK_OSCP.html#section-1-getting-comfortable-with-kali-linux 
