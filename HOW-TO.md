@@ -17,6 +17,8 @@ Grab banners manually for more clarity: nc -nv <192.168.x.x> <port>
 
 >> robots.txt
 
+>> Check network on page load > any additional files [ look at loaded components and data ] 
+
 >> nmap -A -Pn 192.168.x.x -vv  [ look at ports + services + http methods && special info / configs ] 
 
 >> if software / application open sourcec check git for info disclosure or good references
@@ -35,8 +37,10 @@ Grab banners manually for more clarity: nc -nv <192.168.x.x> <port>
     ../
         Directory Traversal vulns
                                      
-       Check network during page load > any additional files / does it take source from remote addr / pull data / etc
   ''' 
+
+         
+
 
 ## DIRS
 
