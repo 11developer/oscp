@@ -36,13 +36,9 @@ Antivirus Bypassing
 
 1. nmap https://blog.zsec.uk/nmap-rtfm/ 
 
-
 2. wireshark 
 3. metasploit 
 4. burp-suite 
-
-
-
 5. netcat
 https://www.sans.org/security-resources/sec560/netcat_cheat_sheet_v1.pdf 
 
@@ -53,6 +49,13 @@ https://medium.com/@_sathishshan/netcat-vs-ncat-3e5c421db085
 https://hackertarget.com/tcpdump-examples/ 
 
 https://danielmiessler.com/study/tcpdump/
+
+
+service enumeration 
+
+http://0daysecurity.com/penetration-testing/enumeration.html 
+
+https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/ 
 
 
 
