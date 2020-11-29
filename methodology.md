@@ -42,7 +42,7 @@ Grab banners manually for more clarity: nc -nv <192.168.x.x> <port>
   ''' 
 
 >> DNS enum  https://resources.infosecinstitute.com/topic/dns-enumeration-techniques-in-linux/#gref 
-
+https://github.com/darkoperator/dnsrecon 
 
 ## DIRS
 
