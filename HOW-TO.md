@@ -1,4 +1,4 @@
-# FIND EXPLOITS IN THE WILD
+# FIND VULN POC's IN THE WILD
 
 >> sometimes vulns and exploits are 1:1 as the lab for example apache + postfix + vulnhub > 
 google result shows dedicated write up for this exact match.
@@ -7,7 +7,7 @@ google result shows dedicated write up for this exact match.
 # WEB
 
 >> see all links for faster enum of site content (linkgopher)
-
+>> robots.txt
 
 
 ## DIRS
