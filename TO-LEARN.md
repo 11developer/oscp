@@ -50,6 +50,8 @@ https://medium.com/@_sathishshan/netcat-vs-ncat-3e5c421db085
 6. tcpdump 
 https://hackertarget.com/tcpdump-examples/ 
 
+https://danielmiessler.com/study/tcpdump/
+
 
 
 GUIDES:
