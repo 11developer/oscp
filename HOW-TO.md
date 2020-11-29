@@ -4,16 +4,20 @@
 google result shows dedicated write up for this exact match.
 
 
-## WEB
+# WEB
 
-# DIRS
+>> see all links for faster enum of site content (linkgopher)
+
+
+
+## DIRS
 
 >> test the name of the domain/sub/ other indicator as dir name 
 
 >> e.g. > target.e231.com/e231  - subname.e231.com/subname  
 
 
-# Identify software versions
+## Identify software versions
 | - | - | 
 |:---:|:---:|
 | scanner output |
