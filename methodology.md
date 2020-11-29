@@ -75,17 +75,30 @@ Grab banners manually for more clarity: nc -nv <192.168.x.x> <port>
 | type -filename- |
 
 
->> try open file with editors 
+>> try open file with editors & commands  
 
-| command | - |
+| command-tool for linux | - |
 |:---:|:---:|
-| vi -filename- |
-| vim -filename- |
-| emacs -filename- |
-| nano -filename-  |
-| gedit  (gnome's default editor) |
-| leafpad (lxde's default editor) |
-| kedit  (KDE's default editor) |
-| xdg-open -filename- |
-| if viewing doesnt work at all - download to local machine  |
+| vi file.txt | https://www.guru99.com/the-vi-editor.html 
+| vim file.txt | https://vim.fandom.com/wiki/Tutorial 
+| emacs file.txt | https://www.cs.colostate.edu/helpdocs/emacs.html
+| nano file.txt  | https://phoenixnap.com/kb/use-nano-text-editor-commands-linux 
+| leafpad file.txt | https://manpages.debian.org/stretch/leafpad/leafpad.1.en.html 
+| xdg-open file.txt | https://linux.die.net/man/1/xdg-open
+| if viewing doesnt work at all - download file to host and open|
 
+| more file.txt  | 
+| cat file.txt | 
+| less file.txt | 
+| cat -A file.txt | 
+
+
+| command-tool for windows | - |
+|:---:|:---:|
+| type file.txt | 
+| text file.txt | 
+| emacs -filename- | 
+
+
+
+Approved tools https://falconspy.medium.com/unofficial-oscp-approved-tools-b2b4e889e707
