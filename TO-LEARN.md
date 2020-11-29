@@ -19,7 +19,7 @@
 
 ## tools i know 
 
-1. namp 
+1. nmap 
 2. wireshark 
 3. metasploit 
 4. burp-suite 
