@@ -9,5 +9,5 @@
 5.5 privesc (linux + windows) 
 6. general knowledge (software, tools, environment, commands, editors, wireshark, sniffing etc) 
 7. keeping notes + screenshots software / methodlogy dev
-8. low hanging fruits practice 
+8. low hanging fruits practice  + ctf
 
