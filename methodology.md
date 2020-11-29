@@ -94,7 +94,7 @@ https://github.com/darkoperator/dnsrecon
 |:---:|:---:|
 | type file.txt | 
 | text file.txt | 
-| emacs -filename- | 
+
 
 
 
