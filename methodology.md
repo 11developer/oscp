@@ -1,3 +1,5 @@
+# OSCP forum - https://forums.offensive-security.com/ 
+
 # FIND VULN POC's IN THE WILD
 
 >> sometimes vulns and exploits are 1:1 as the lab for example apache + postfix + vulnhub > 
