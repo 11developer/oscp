@@ -87,11 +87,6 @@ Grab banners manually for more clarity: nc -nv <192.168.x.x> <port>
 | xdg-open file.txt | https://linux.die.net/man/1/xdg-open
 | if viewing doesnt work at all - download file to host and open|
 
-| more file.txt  | 
-| cat file.txt | 
-| less file.txt | 
-| cat -A file.txt | 
-
 
 | command-tool for windows | - |
 |:---:|:---:|
