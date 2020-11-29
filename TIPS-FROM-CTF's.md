@@ -3,18 +3,14 @@
 >> sometimes vulns and exploits are 1:1 as the lab for example apache + postfix + vulnhub > 
 google result shows dedicated write up for this exact match.
 
-# DIRS [WEB]
+# DIRS
 
 >> test the name of the domain/sub/ other indicator as dir name 
 
->> e.g. > target.e231.com/e231 
-
-OR
-
-subname.e231.com/subname  
+>> e.g. > target.e231.com/e231  - subname.e231.com/subname  
 
 
-# SOFTWARE VERSION IDENTIFICATION
+# Identify software versions
 | - | - | 
 |:---:|:---:|
 | scanner output |
