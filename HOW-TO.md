@@ -17,7 +17,22 @@ Grab banners manually for more clarity: nc -nv <192.168.x.x> <port>
 >> robots.txt
 >> nmap -A -Pn 192.168.x.x -vv  [ look at ports + services + http methods && special info / configs ] 
 >> if software / application open sourcec check git for info disclosure or good references
+>> forms input validation testing :
 
+''' (like: 1′ or 1=1 limit 1;#   AND   1′ or 1=1–)
+    NULL or null
+        Possible error messages returned.
+    ‘ , ” , ; , <!
+        Breaks an SQL string or query; used for SQL, XPath and XML Injection tests.
+    – , = , + , ”
+        Used to craft SQL Injection queries.
+    ‘ , &, ! , ¦ , < , >
+        Used to find command execution vulns.
+    ../
+        Directory Traversal vulns
+                                     
+       Check network during page load > any additional files / does it take source from remote addr / pull data / etc
+  ''' 
 
 ## DIRS
 
