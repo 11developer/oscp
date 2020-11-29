@@ -47,6 +47,10 @@ https://www.sans.org/security-resources/sec560/netcat_cheat_sheet_v1.pdf
 https://medium.com/@_sathishshan/netcat-vs-ncat-3e5c421db085
 
 
+6. tcpdump 
+https://hackertarget.com/tcpdump-examples/ 
+
+
 
 GUIDES:
 
