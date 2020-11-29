@@ -1,4 +1,4 @@
-Getting Comfortable with Kali Linux
+Getting Comfortable with Kali Linux (Env + bash) 
 
 Essential Tools in Kali
 
