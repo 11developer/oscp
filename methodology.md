@@ -48,6 +48,9 @@ Grab banners manually for more clarity: nc -nv <192.168.x.x> <port>
 
 >> e.g. > target.e231.com/e231  - subname.e231.com/subname  
 
+>> dirb [ use software / app custom list if applicable , else common.txt or big.txt ] 
+
+
 
 ## Identify software versions
 | - | - | 
