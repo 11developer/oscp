@@ -15,3 +15,12 @@
 
 
 * = done 
+
+
+## tools i know 
+
+1. namp 
+2. wireshark 
+3. metasploit 
+4. burp-suite 
+5. netcat 
