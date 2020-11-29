@@ -3,11 +3,20 @@
 >> sometimes vulns and exploits are 1:1 as the lab for example apache + postfix + vulnhub > 
 google result shows dedicated write up for this exact match.
 
+## TARGETED NMAP SCAN (nse) 
+
+https://nmap.org/nsedoc/ 
+example of script usage:
+nmap --script=VULN-TEST-XYZ -p 3366 <targets>
+Grab banners manually for more clarity: nc -nv <192.168.x.x> <port>
+
 
 # WEB
 
 >> see all links for faster enum of site content (linkgopher)
 >> robots.txt
+>> nmap -A -Pn 192.168.x.x -vv  [ look at ports + services + http methods && special info / configs ] 
+>> if software / application open sourcec check git for info disclosure or good references
 
 
 ## DIRS
