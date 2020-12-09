@@ -1,22 +1,20 @@
 Getting Comfortable with Kali Linux (Env + bash)  *
 
-Essential Tools in Kali *
+Essential Tools in Kali * done 
 
-Passive Reconnaissance * 
+Passive Reconnaissance half done (webapp yes, network no) 
 
-Active Reconnaissance  *
+Active Reconnaissance  half done (webapp yes, network no) 
 
-Vulnerability Scanning  * 
+Vulnerability Scanning  * done
 
-Buffer Overflows
+Buffer Overflows 
 
 Working with Public Exploits * 
 
-File Transfer
+File Transfer * (using ftp, ssh, wget, 
 
-Privilege Escalation (Linux & Windows)
-
-Client-Side Attacks
+Privilege Escalation (Linux & Windows) 
 
 Web Application Attacks (PHP, PY, JS) (client side attacks, server side attacks (owasp top 10) 
     (compiling, scripting, setup server, run code, transfer, download..etc) 
@@ -27,7 +25,7 @@ Tunneling/Pivoting (configs, lateral movement, adding users, FW configs, etc)
 
 Metasploit Framework * 
 
-Antivirus Bypassing
+Antivirus Bypassing * 
     
 
 * = done 
