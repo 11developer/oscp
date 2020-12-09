@@ -61,3 +61,14 @@ Know the permissions of /etc/passwd, /etc/shadow, /etc/cron* by heart, as well a
 and be ready to spot when you can read or write something you shouldn't. Also, if you got in with credentials, always check what sudo permissions you have. 
 
 You can be pleasantly surprised.
+
+
+
+ref 
+
+https://www.reddit.com/r/oscp/comments/9ystub/i_absolutely_suck_at_privilege_escalation/ 
+
+
+always worth taking a very close look at everything you find on your user's home directory. 
+
+If you find config files, scripts, binaries, text files.... It is extremely likely they're related to the path you need to take. 
