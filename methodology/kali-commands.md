@@ -1,4 +1,4 @@
-2.4.1 The Linux Filesystem
+The Linux Filesystem
 
 Kali Linux adheres to the filesystem hierarchy standard (FHS),35 which provides a 
 familiar and universal layout for all Linux users. The directories you will find most useful are:
@@ -17,6 +17,10 @@ familiar and universal layout for all Linux users. The directories you will find
 • /usr/share - application support and data files
 
 
+
+man ls 
+Most executable programs intended for the Linux command line provide a 
+formal piece of documentation often called manual or man pages.36 A special program called man is used to view these pages.
 
 
 
