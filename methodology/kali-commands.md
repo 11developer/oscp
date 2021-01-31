@@ -1,4 +1,4 @@
-The Linux Filesystem
+# The Linux Filesystem
 
 Kali Linux adheres to the filesystem hierarchy standard (FHS),35 which provides a 
 familiar and universal layout for all Linux users. The directories you will find most useful are:
@@ -17,19 +17,31 @@ familiar and universal layout for all Linux users. The directories you will find
 • /usr/share - application support and data files
 
 
-manual pages about a command 
+# manual pages about a command 
 man ls 
 Most executable programs intended for the Linux command line provide a 
 formal piece of documentation often called manual or man pages.36 A special program called man is used to view these pages.
 
 
 
-Listing Files
+# Listing Files
 The ls command prints out a basic file listing to the screen. We can modify the output results with various wildcards. 
 The -a option is used to display all files (including hidden ones) and the -1 option displays each file on a single line, 
 which is very useful for automation.
 
 ls -a 
+
+
+
+# Moving Around
+Linux does not use Windows-style drive letters. Instead, all files, folders, and devices are children of the root directory, 
+represented by the “/” character. We can use the cd command followed by a path to change to the specified directory. 
+The pwd command will print the current directory (which is helpful if you get lost) and running cd ~ will return to the home directory.
+
+
+
+
+
 
 
 The below commands will list all .txt files to identify the flags. Used in several CTFs and useful for the OSCP challenge.
