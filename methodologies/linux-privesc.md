@@ -1,5 +1,8 @@
 EDIT THIS BY METHODS 
 
+https://pentestlab.blog/2017/03/30/weak-service-permissions/ 
+
+
 
 # Privesc via automation 
 https://www.hackingarticles.in/linux-privilege-escalation-via-automated-script/ 
