@@ -1,3 +1,6 @@
+https://github.com/sagishahar/lpeworkshop
+
+
 # Privesc via automation 
 https://www.hackingarticles.in/window-privilege-escalation-via-automated-script/ 
 
