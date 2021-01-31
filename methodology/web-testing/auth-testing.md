@@ -28,3 +28,4 @@ search any known portal applications / cms / web application info
 
 if i have admin cookie like cookie: xyz xyz admin=0 , try set this to 1 and fwd req
 
+e.g https://attackdefense-solutions-docs.s3.amazonaws.com/attackdefense-public/walkthrough-2131.pdf?Signature=8mwZ5ZW3Ib%2Bi69kBnJU9ZeTGr7A%3D&Expires=1612111215&AWSAccessKeyId=AKIAVPAISQ7V6OPYMUOC 
