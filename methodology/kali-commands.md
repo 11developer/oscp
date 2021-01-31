@@ -48,6 +48,18 @@ These characters will make auto-completes (executed with the A key) much easier 
 
 
 
+
+# Finding Files in Kali Linux
+Three of the most common Linux commands used to locate files in Kali Linux include find, locate, and which. 
+These utilities have similarities, but work and return data in different ways and therefore may be used in different circumstances.
+2.4.3.1 which
+The which command39 searches through the directories that are defined in the $PATH environment variable for a given file name. 
+This variable contains a listing of directories that Kali searches when a command is issued without its path. If a match is found, 
+which returns the full path to the file as shown below:
+
+
+
+
 The below commands will list all .txt files to identify the flags. Used in several CTFs and useful for the OSCP challenge.
 WINDOWS
 
