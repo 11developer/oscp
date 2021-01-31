@@ -34,3 +34,8 @@ e.g https://attackdefense-solutions-docs.s3.amazonaws.com/attackdefense-public/w
 # session manipulation pt2 
 
 if i have creds for portal, upon login the responce is user not admin, try logout > catch cookie sessid and insert via burp to test admin permissions 
+
+https://attackdefense-solutions-docs.s3.amazonaws.com/attackdefense-public/walkthrough-1931.pdf?Signature=gvaLULM1qxOKpVtWoWlFfPnZLK4%3D&Expires=1612111433&AWSAccessKeyId=AKIAVPAISQ7V6OPYMUOC 
+
+
+
