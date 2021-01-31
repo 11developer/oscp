@@ -52,10 +52,40 @@ These characters will make auto-completes (executed with the A key) much easier 
 # Finding Files in Kali Linux
 Three of the most common Linux commands used to locate files in Kali Linux include find, locate, and which. 
 These utilities have similarities, but work and return data in different ways and therefore may be used in different circumstances.
-2.4.3.1 which
+
+
+## which
 The which command39 searches through the directories that are defined in the $PATH environment variable for a given file name. 
 This variable contains a listing of directories that Kali searches when a command is issued without its path. If a match is found, 
 which returns the full path to the file as shown below:
+
+kali@kali:~$ which sbd
+
+/usr/bin/sbd
+
+
+## locate
+Exploring the which command
+The locate command is the quickest way to find the locations of files and directories in Kali. In order to provide a much shorter search time, locate searches a built-in database named locate.db rather than the entire hard disk itself. This database is automatically updated on a regular basis by the cron scheduler. To manually update the locate.db database, you can use the updatedb command.
+
+kali@kali:~$ locate sbd.exe 
+
+/usr/share/windows-resources/sbd/sbd.exe
+
+
+
+## find
+The find command41 is the most complex and flexible search tool among the three. Mastering its syntax can sometimes be tricky, but its capabilities go beyond a normal file search. The most basic usage of the find command is shown in Listing 14, where we perform a recursive search starting from the root file system directory and look for any file that starts with the letters “sbd”.
+
+
+kali@kali:~$ sudo find / -name sbd*
+
+/usr/bin/sbd
+/usr/share/doc/sbd /usr/share/windows-resources/sbd /usr/share/windows-resources/sbd/sbd.exe /usr/share/windows-resources/sbd/sbdbg.exe /var/cache/apt/archives/sbd_1.37-1kali3_amd64.deb /var/lib/dpkg/info/sbd.md5sums /var/lib/dpkg/info/sbd.list
+
+
+
+
 
 
 
