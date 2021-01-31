@@ -1,3 +1,5 @@
+# DATA TYPES TO LOOK FOR - THINGS OUT OF ORDER / MISCONFIGURED
+
 # Bad permissions. 
 
 
