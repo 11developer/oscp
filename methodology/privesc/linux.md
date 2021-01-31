@@ -1,6 +1,7 @@
 EDIT THIS BY METHODS 
 
 https://pentestlab.blog/2017/03/30/weak-service-permissions/ 
+https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/  
 
 
 
