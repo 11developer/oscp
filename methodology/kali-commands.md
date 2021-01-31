@@ -1,3 +1,16 @@
+2.4.1 The Linux Filesystem
+Kali Linux adheres to the filesystem hierarchy standard (FHS),35 which provides a familiar and universal layout for all Linux users. The directories you will find most useful are:
+• /bin - basic programs (ls, cd, cat, etc.)
+• /sbin - system programs (fdisk, mkfs, sysctl, etc)
+• /etc - configuration files
+• /tmp - temporary files (typically deleted on boot)
+• /usr/bin - applications (apt, ncat, nmap, etc.)
+• /usr/share - application support and data files
+
+
+
+
+
 The below commands will list all .txt files to identify the flags. Used in several CTFs and useful for the OSCP challenge.
 WINDOWS
 
