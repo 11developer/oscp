@@ -40,7 +40,11 @@ The pwd command will print the current directory (which is helpful if you get lo
 
 
 
-
+# Creating Directories
+The mkdir command followed by the name of a directory creates the specified directory. 
+Directory names can contain spaces but since we will be spending a lot of time at the command line, 
+we’ll save ourselves a lot of trouble by using hyphens or underscores instead. 
+These characters will make auto-completes (executed with the A key) much easier to complete.
 
 
 
