@@ -24,3 +24,7 @@ src: https://pentestlab.blog/2012/12/24/sql-injection-authentication-bypass-chea
 search any known portal applications / cms / web application info 
 
 
+# session manipulation pt1 
+
+if i have admin cookie like cookie: xyz xyz admin=0 , try set this to 1 and fwd req
+
