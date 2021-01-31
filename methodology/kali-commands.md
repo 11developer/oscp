@@ -84,7 +84,7 @@ kali@kali:~$ sudo find / -name sbd*
 /usr/share/doc/sbd /usr/share/windows-resources/sbd /usr/share/windows-resources/sbd/sbd.exe /usr/share/windows-resources/sbd/sbdbg.exe /var/cache/apt/archives/sbd_1.37-1kali3_amd64.deb /var/lib/dpkg/info/sbd.md5sums /var/lib/dpkg/info/sbd.list
 
 
-
+The main advantage of find over locate is that it can search for files and directories by more than just the name. With find, we can search by file age, size, owner, file type, timestamp, permissions, and more
 
 
 
