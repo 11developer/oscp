@@ -17,11 +17,19 @@ familiar and universal layout for all Linux users. The directories you will find
 • /usr/share - application support and data files
 
 
-
+manual pages about a command 
 man ls 
 Most executable programs intended for the Linux command line provide a 
 formal piece of documentation often called manual or man pages.36 A special program called man is used to view these pages.
 
+
+
+Listing Files
+The ls command prints out a basic file listing to the screen. We can modify the output results with various wildcards. 
+The -a option is used to display all files (including hidden ones) and the -1 option displays each file on a single line, 
+which is very useful for automation.
+
+ls -a 
 
 
 The below commands will list all .txt files to identify the flags. Used in several CTFs and useful for the OSCP challenge.
