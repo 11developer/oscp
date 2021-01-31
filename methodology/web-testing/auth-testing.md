@@ -6,6 +6,12 @@ e.g.
 https://attackdefense-solutions-docs.s3.amazonaws.com/attackdefense-public/walkthrough-438.pdf?Signature=aeKUyvUFhsIaBSVEFNSQyfnOEA0%3D&Expires=1612108978&AWSAccessKeyId=AKIAVPAISQ7V6OPYMUOC 
 
 
+
+# logout 
+
+try request logout page see what happens
+
+
 # sql inj 
 
 admin' or '1'='1'-- 
