@@ -1,6 +1,6 @@
 # broken auth 
 
-test is i can add IsLoggedIn: yes cookie and pass the request 
+can add "Cookie: LoggedIn=yes" cookie and pass the request 
 
 
 # sql inj 
