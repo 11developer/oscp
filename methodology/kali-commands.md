@@ -90,6 +90,21 @@ The main advantage of find over locate is that it can search for files and direc
 
 
 
+
+
+# Managing Kali Linux Services
+
+
+
+
+
+
+
+
+
+
+
+
 The below commands will list all .txt files to identify the flags. Used in several CTFs and useful for the OSCP challenge.
 WINDOWS
 
