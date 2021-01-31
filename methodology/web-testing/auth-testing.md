@@ -38,4 +38,11 @@ if i have creds for portal, upon login the responce is user not admin, try logou
 https://attackdefense-solutions-docs.s3.amazonaws.com/attackdefense-public/walkthrough-1931.pdf?Signature=gvaLULM1qxOKpVtWoWlFfPnZLK4%3D&Expires=1612111433&AWSAccessKeyId=AKIAVPAISQ7V6OPYMUOC 
 
 
+# session manipulation pt3 
+
+if i get a url to login portal where e.g. site.com/login.php?admin=0  > try change 0 to 1 
+
+e.g. https://attackdefense-solutions-docs.s3.amazonaws.com/attackdefense-public/walkthrough-2130.pdf?Signature=352YJ7IcNBfdDGN%2BAYgw9eVfR2E%3D&Expires=1612111622&AWSAccessKeyId=AKIAVPAISQ7V6OPYMUOC 
+
+
 
