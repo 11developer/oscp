@@ -24,6 +24,43 @@ nmap -sU -sV -vv -oA quick_udp target
 nmap -sC -sV -p- -vv -oA full target
 
 
+## Web Scanning
+    Gobuster quick directory busting
+gobuster -u target -w /usr/share/seclists/Discovery/Web_Content/common.txt -t 80 -a Linux
+
+    
+    Gobuster search with file extension
+gobuster -u target -w /usr/share/seclists/Discovery/Web_Content/common.txt -t 80 -a Linux -x .txt,.php
+
+
+    Nikto web server scan
+nikto -h target
+
+
+    Wordpress scan
+wpscan -u target/wp/
+
+
+    Port Checking
+  https://www.infosectrain.com/
+  
+  
+    Netcat banner grab
+nc -v target port
+Telnet banner grab
+telnet target port
+
+## SMB
+    SMB Vulnerability Scan
+nmap -p 445 -vv --script=smb-vuln-cve2009-3103.nse,smb-vuln-ms06- 025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln- ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse target
+
+
+    SMB Users & Shares Scan
+nmap -p 445 -vv --script=smb-enum-shares.nse,smb-enum-users.nse target
+
+
+    Enum4linux
+enum4linux -a target
 
 # WEB
 
