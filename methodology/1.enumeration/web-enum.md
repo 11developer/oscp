@@ -11,6 +11,18 @@ https://nmap.org/nsedoc/
 example of script usage:
 nmap --script=VULN-TEST-XYZ -p 3366 <targets>
 Grab banners manually for more clarity: nc -nv <192.168.x.x> <port>
+    
+    Quick TCP Scan
+nmap -sC -sV -vv -oA quick target 
+
+
+    Quick UDP Scan
+nmap -sU -sV -vv -oA quick_udp target 
+
+
+    Full TCP Scan
+nmap -sC -sV -p- -vv -oA full target
+
 
 
 # WEB
