@@ -40,10 +40,6 @@ nikto -h target
     Wordpress scan
 wpscan -u target/wp/
 
-
-    Port Checking
-  https://www.infosectrain.com/
-  
   
     Netcat banner grab
 nc -v target port
@@ -61,6 +57,20 @@ nmap -p 445 -vv --script=smb-enum-shares.nse,smb-enum-users.nse target
 
     Enum4linux
 enum4linux -a target
+
+
+    Null connect
+rpcclient -U "" target
+
+
+    Connect to SMB share
+smbclient //MOUNT/share
+
+
+## SNMP
+
+    SNMP enumeration 
+snmp-check target
 
 # WEB
 
