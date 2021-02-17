@@ -818,3 +818,16 @@ https://www.hackingarticles.in/linux-for-pentester-zip-privilege-escalation/
 # APT exploitation 
 https://www.hackingarticles.in/linux-for-pentester-apt-privilege-escalation/ 
 
+
+Privilege Escalation:
+g0tmi1k Linux Priv Esc fuzzysecurity Windows Priv Esc sploitspren Windows Priv Esc togie6 Windows Priv Esc Guide Kernel Exploits:
+abatchy17’s Windows Exploits lucyoa’s kernel exploits
+Buffer Overflows:
+CorleanSeries:
+Part 1: https://www.corelan.be/index.php/2009/07/19/exploit-writing-
+tutorial-part-1-stack-based-overflows/
+Part 2: https://www.corelan.be/index.php/2009/07/23/writing-buffer- overflow-exploits-a-quick-and-basic-tutorial-part-2/
+Scripts:
+LinuxPrivChecker LinEnum PowerUp
+
+
