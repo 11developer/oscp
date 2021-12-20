@@ -1,0 +1,13 @@
+60 points	3 independent targets	
+2-step targets (low and high privileges)
+Buffer Overflow may (or may not) be included as a low-privilege attack vector.
+20 points per machine
+10 points for low-privilege
+10 points for privilege escalation
+40 points	2 clients
+1 domain controller	
+NEW: Active Directory set.
+Points are awarded only for the full exploit chain of the domain.
+No partial points will be awarded.
+
+https://www.offensive-security.com/offsec/oscp-exam-structure/ 
